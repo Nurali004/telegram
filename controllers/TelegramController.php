@@ -22,6 +22,31 @@ class TelegramController extends Controller
         $chat_id = $update['message']['chat']['id'] ?? null;
         $text = $update['message']['text'] ?? '';
 
+        if($text == 'Qalin' && $chat_id){
+            $reply = "<b>". $text. "</b>";
+            $this->sendMessage($chat_id, $reply);
+        }elseif($text == 'Yotiq' && $chat_id){
+            $reply = "<i>". $text. "</i>";
+            $this->sendMessage($chat_id, $reply);
+        }elseif($text == 'Pastgi chiziq' && $chat_id){
+            $reply = "<u>". $text. "</u>";
+            $this->sendMessage($chat_id, $reply);
+        }elseif($text == 'Yotiq va Qalin' && $chat_id){
+            $reply = "<b>".'<i>'. $text. '</i>'."</b>";
+            $this->sendMessage($chat_id, $reply);
+        }elseif($text == 'Yashirin' && $chat_id){
+            $reply = $text.'<span class="tg-spoiler">Yashirin</span>';
+            $this->sendMessage($chat_id, $reply);
+        }elseif($text == 'Havola' && $chat_id){
+            $reply = $text.'<a href="https://1.nugaev.uz">Bizning sayt</a>';
+            $this->sendMessage($chat_id, $reply);
+        }elseif($text == 'User' && $chat_id){
+            $reply = '<a href="tg://user?id=6989752538">Nurali Mavzurov</a>';
+            $this->sendMessage($chat_id, $reply);
+        }
+
+
+
 
     }
 
@@ -32,29 +57,7 @@ class TelegramController extends Controller
             'parse_mode' => 'HTML'
         ];
 
-        if($text == 'Qalin' && $chat_id){
-            $reply = "<b>". $text. "</b>";
-            file_get_contents("{$this->url}sendMessage?". http_build_query($data));
-        }elseif($text == 'Yotiq' && $chat_id){
-            $reply = "<i>". $text. "</i>";
-            file_get_contents("{$this->url}sendMessage?". http_build_query($data));
-        }elseif($text == 'Pastgi chiziq' && $chat_id){
-            $reply = "<u>". $text. "</u>";
-            file_get_contents("{$this->url}sendMessage?". http_build_query($data));
-        }elseif($text == 'Yotiq va Qalin' && $chat_id){
-            $reply = "<b>".'<i>'. $text. '</i>'."</b>";
-            file_get_contents("{$this->url}sendMessage?". http_build_query($data));
-        }elseif($text == 'Yashirin' && $chat_id){
-            $reply = $text.'<span class="tg-spoiler">Yashirin</span>';
-            file_get_contents("{$this->url}sendMessage?". http_build_query($data));
-        }elseif($text == 'Havola' && $chat_id){
-            $reply = $text.'<a href="https://1.nugaev.uz">Bizning sayt</a>';
-            file_get_contents("{$this->url}sendMessage?". http_build_query($data));
-        }elseif($text == 'User' && $chat_id){
-            $reply = '<a href="tg://user?id=6989752538">Nurali Mavzurov</a>';
-            file_get_contents("{$this->url}sendMessage?". http_build_query($data));
-        }
-
+        file_get_contents("{$this->url}sendMessage?". http_build_query($data));
 
     }
 }
