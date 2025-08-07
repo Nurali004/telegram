@@ -29,6 +29,9 @@ class TelegramController extends Controller
         }elseif($text == 'Yotiq va Qalin' && $chat_id){
             $reply = "<b>".'<i>'. $text. '</i>'."</b>";
             file_get_contents("{$apiUrl}sendMessage?chat_id=$chat_id&parse_mode=HTML&text=" . urlencode($reply));
+        }elseif($text == 'Yashirin' && $chat_id){
+            $reply = $text.'<span class="tg-spoiler">spoiler</span>, <tg-spoiler>spoiler</tg-spoiler>';
+            file_get_contents("{$apiUrl}sendMessage?chat_id=$chat_id&parse_mode=HTML&text=" . urlencode($reply));
         }
 
 
