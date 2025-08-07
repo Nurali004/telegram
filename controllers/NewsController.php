@@ -5,8 +5,6 @@ use models\Post;
 use models\User;
 use vendor\frame\Controller;
 
-
-
 class NewsController extends Controller
 {
     public function list(){
@@ -39,7 +37,7 @@ class NewsController extends Controller
            $comment = new Comment();
            $data = [
                'user_id' => $_POST['user_id'],
-               'message' => $_POST['textarea']
+               'message' => $_POST['message']
            ];
 
 

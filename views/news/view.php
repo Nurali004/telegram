@@ -29,11 +29,11 @@
 
             <div class="col-md-6">
 
-                <form method="post">
+                <form method="post" action="/news/add">
 
-                    <p><input type="text" name="username" class="form-control" placeholder="Username"></p>
+                    <p><input type="text" name="user_id" class="form-control" placeholder="User_id"></p>
                     <p><textarea name="message" id="" cols="30" rows="10" class="form-control" ></textarea></p>
-                    <p><input type="submit" value="Yuborish" class="btn btn-success"></p>
+                    <p><input type="submit" name="submit" value="Yuborish" class="btn btn-success"></p>
                 </form>
             </div>
         </div>
