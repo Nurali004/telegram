@@ -7,7 +7,7 @@ class Connection{
   private $conn;
   
   private $host = 'localhost';
-  private $user = 'root';
+  private $user = 'mvc';
   private $pass = '12345678';
   private $name = 'news';
 
