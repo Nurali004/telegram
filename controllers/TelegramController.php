@@ -17,11 +17,15 @@ class TelegramController extends Controller
         $chat_id = $update['message']['chat']['id'] ?? null;
         $text = $update['message']['text'] ?? '';
 
-        if ($chat_id && $text) {
-            $reply = "*Siz yozdingiz: *" . $text;
-            file_get_contents("{$apiUrl}sendMessage?chat_id=$chat_id&parse_mode=MarkdownV2&text=" . urlencode($reply));
-
+        if($text == 'qalin' && $chat_id){
+            $reply = "<b>". $text. "</b>" . $text;
+            file_get_contents("{$apiUrl}sendMessage?chat_id=$chat_id&parse_mode=HTML&text=" . urlencode($reply));
+        }elseif($text == 'yotiq' && $chat_id){
+            $reply = "<i>Siz yozdingiz: </i>" . $text;
+            file_get_contents("{$apiUrl}sendMessage?chat_id=$chat_id&parse_mode=HTML&text=" . urlencode($reply));
         }
+
+
 
     }
 }
