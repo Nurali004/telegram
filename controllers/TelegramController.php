@@ -30,7 +30,10 @@ class TelegramController extends Controller
             $reply = "<b>".'<i>'. $text. '</i>'."</b>";
             file_get_contents("{$apiUrl}sendMessage?chat_id=$chat_id&parse_mode=HTML&text=" . urlencode($reply));
         }elseif($text == 'Yashirin' && $chat_id){
-            $reply = $text.'<span class="tg-spoiler">spoiler</span>, <tg-spoiler>spoiler</tg-spoiler>';
+            $reply = $text.'<span class="tg-spoiler">Yashirin</span>';
+            file_get_contents("{$apiUrl}sendMessage?chat_id=$chat_id&parse_mode=HTML&text=" . urlencode($reply));
+        }elseif($text == 'Havola' && $chat_id){
+            $reply = $text.'<a href="https://1.nugaev.uz">Bizning sayt</a>';
             file_get_contents("{$apiUrl}sendMessage?chat_id=$chat_id&parse_mode=HTML&text=" . urlencode($reply));
         }
 
