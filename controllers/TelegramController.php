@@ -35,6 +35,9 @@ class TelegramController extends Controller
         }elseif($text == 'Havola' && $chat_id){
             $reply = $text.'<a href="https://1.nugaev.uz">Bizning sayt</a>';
             file_get_contents("{$apiUrl}sendMessage?chat_id=$chat_id&parse_mode=HTML&text=" . urlencode($reply));
+        }elseif($text == 'User' && $chat_id){
+            $reply = '<a href="tg://user?id=6989752538">Nurali Mavzurov</a>';
+            file_get_contents("{$apiUrl}sendMessage?chat_id=$chat_id&parse_mode=HTML&text=" . urlencode($reply));
         }
 
 
