@@ -8,7 +8,7 @@ class Connection{
   
   private $host = 'localhost';
   private $user = 'mvc';
-  private $pass = '12345678';
+  private $pass = 12345678;
   private $name = 'news';
 
   public function __construct()
