@@ -8,27 +8,20 @@ class TelegramController extends Controller
 {
     public function bot(){
 
-        $token = '8462375190:AAF7Jzqrc6p5zoRCfZgTOPzGLVAfF-JcVek';
+        $token = '8297930277:AAEeX9D0hmwxJdlDu7wtVXQ0dpHGzqrbCAw';
         $apiUrl = 'https://api.telegram.org/bot'.$token.'/';
-        $updates = file_get_contents("{$apiUrl}getUpdates");
-        $updatesArray = json_decode($updates, true);
 
-        $lastMessage = end($updatesArray['result']);
-        $chat_id = $lastMessage['message']['chat']['id'];
-        $text = $lastMessage['message']['text'];
+        $content = file_get_contents('php://input');
+        $update = json_decode($content, true);
 
-        $text = "siz shu habarni yubordingiz:".$text;
+        $chat_id = $update['message']['chat']['id'] ?? null;
+        $text = $update['message']['text'] ?? '';
 
-        $this->sendMessage("{$apiUrl}sendMessage", $chat_id, $text);
+        if ($chat_id && $text) {
+            $reply = "Siz yozdingiz: " . $text;
+            file_get_contents("{$apiUrl}sendMessage?chat_id=$chat_id&text=" . urlencode($reply));
 
-    }
+        }
 
-    public function sendMessage($url, $chat_id, $text){
-        $data = [
-            'chat_id' => $chat_id,
-            'text' => $text,
-        ];
-        $url = $url.'?'.http_build_query($data);
-        file_get_contents($url);
     }
 }
