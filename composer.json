@@ -2,7 +2,9 @@
     "name": "nurali/mvc",
     "autoload": {
         "psr-4": {
-            "Nurali\\Mvc\\": "src/"
+            "Nurali\\Mvc\\": "src/",
+            "controllers\\": "controllers/",
+            "vendor\\frame\\": "vendor/frame/"
         }
     },
     "authors": [
@@ -11,6 +13,7 @@
         }
     ],
     "require": {
-        "irazasyed/telegram-bot-sdk": "^3.15"
+        "irazasyed/telegram-bot-sdk": "^3.15",
+        "league/event": "^3.0"
     }
 }
