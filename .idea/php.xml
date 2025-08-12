@@ -19,6 +19,62 @@
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/conditionable" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/macroable" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/league/event" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/test/vendor/illuminate/macroable" />
+      <path value="$PROJECT_DIR$/test/vendor/illuminate/collections" />
+      <path value="$PROJECT_DIR$/test/vendor/composer" />
+      <path value="$PROJECT_DIR$/test/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/test/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/test/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/test/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/test/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/test/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/test/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/test/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/test/vendor/league/event" />
+      <path value="$PROJECT_DIR$/test/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/test/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/test/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/test/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/test/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/test/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/test/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/test/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/test/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/test/vendor/irazasyed/telegram-bot-sdk" />
+      <path value="$PROJECT_DIR$/test/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/test/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/test/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/test/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/test/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/test/vendor/illuminate/conditionable" />
+      <path value="$PROJECT_DIR$/test/vendor/illuminate/support" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1">
@@ -31,6 +87,11 @@
   </component>
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" />
+    </phpunit_settings>
   </component>
   <component name="Psalm">
     <Psalm_settings>
