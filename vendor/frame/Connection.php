@@ -6,10 +6,10 @@ class Connection{
     public $pdo;
   private $conn;
   
-  private $host = 'MySQL-5.7';
+  private $host = 'localhost';
   private $user = 'root';
   private $pass = '';
-  private $name = 'bot_shop';
+  private $name = 'shop_bot';
 
   public function __construct()
   {
