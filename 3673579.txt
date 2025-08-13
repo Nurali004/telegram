@@ -1,1 +1,1 @@
-{"page":"Order address page","product":"4","phone":"998979100553","address":null}
+{"page":"Home page","product":"Phone","phone":"+998979100555","address":{"latitude":39.672863,"longitude":66.955241},"count":"6","number":"Contact number page"}

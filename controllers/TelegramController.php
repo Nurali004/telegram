@@ -9,6 +9,7 @@ class TelegramController extends Controller
     public $telegram;
     public $chat_id;
     public $location;
+    public $contact;
 
     public function __construct(){
 
@@ -17,7 +18,7 @@ class TelegramController extends Controller
     public function bot()
     {
 
-         $this->telegram->setWebhook(['url' => 'https://a64ab42996f0.ngrok-free.app/telegram/bot']);
+//         $this->telegram->setWebhook(['url' => 'https://140bc15cd05e.ngrok-free.app/telegram/bot']);
 
      $request = $this->telegram->getWebhookUpdate();
 
@@ -27,15 +28,12 @@ class TelegramController extends Controller
         $this->chat_id = $chat_id;
         $text = $message->getText();
         $this->location = $message['location'] ?? null;
-        $messageId = $message['message_id'];
-
         if ($message->getContact()){
             $contact = $message->getContact();
-            $phone = $contact->getPhoneNumber();
-            $this->setPhone($phone);
-            $this->showOrderAddressPage();
-            return;
+            $this->contact = $contact->getPhoneNumber();
         }
+
+        $messageId = $message['message_id'];
 
 
         switch ($text) {
@@ -121,7 +119,6 @@ class TelegramController extends Controller
                                 case Text::COUNT_PAGE:
                                     $this->countPage($text);
                                     break;
-
                                 case Text::CONTACT_NUMBER_PAGE:
                                     $this->orderContactNumberPage($text);
                                     break;
@@ -220,6 +217,16 @@ class TelegramController extends Controller
         $this->showCountPage();
     }
 
+    public function orderContactNumberPage($text = null){
+
+        if ($this->contact){
+            $text = $this->contact;
+        }
+
+        $this->setPhone($text);
+        $this->showOrderAddressPage();
+    }
+
     public function showCountPage(){
         $this->setPage(Text::COUNT_PAGE);
 
@@ -247,8 +254,12 @@ class TelegramController extends Controller
     }
 
     public function countPage($text){
-        $this->setProduct($text);
-        $this->orderContactNumberPage();
+        if ($text < 2 || $text > 30) {
+            $this->sendMessage("Siz hamida 2 ta, ko'pi bilan 30 ta mahsulot buyurtma qilishingiz mumkin!");
+            die();
+        }
+        $this->setCount($text);
+        $this->showOrderContactNumberPage();
        // $this->showOrderAddressPage();
     }
 
@@ -275,8 +286,8 @@ class TelegramController extends Controller
 
         $this->sendMessageWithKeyboard($text, $reply_markup);
     }
-    public function orderContactNumberPage(){
-        $this->setOrderContactNumberPage(Text::CONTACT_NUMBER_PAGE);
+    public function showOrderContactNumberPage(){
+        $this->setPage(Text::CONTACT_NUMBER_PAGE);
 
         $text = "Yetkazib berish uchun kontaktingizni kiriting";
 
@@ -314,8 +325,6 @@ class TelegramController extends Controller
         $product = $this->getProduct();
         $count = $this->getCount();
         $number = $this->getPhone();
-
-
 
         $order_text = "Yangi buyurtma qabul qilindi\n\n";
         $order_text .= "Mahsulot: {$product}\n";
