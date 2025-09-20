@@ -8,8 +8,13 @@ class Connection{
   
   private $host = 'localhost';
   private $user = 'root';
+<<<<<<< HEAD
   private $pass = 'root';
   private $name = 'bot_shop';
+=======
+  private $pass = '';
+  private $name = 'shop_bot';
+>>>>>>> 508f52b7fa4209aaa11d353103462605d45e520f
 
     public function __construct()
     {

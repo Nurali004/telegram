@@ -11,6 +11,15 @@ spl_autoload_register(function ($class) {
     }
 });
 
+<<<<<<< HEAD
 // 3. MVC App ni ishga tushirish
 $app = new vendor\frame\App();
+=======
+require_once("vendor/frame/App.php");
+require_once __DIR__ . "/vendor/autoload.php";
+require_once __DIR__ . "/autoload.php";
+
+
+$app = new App();
+>>>>>>> 508f52b7fa4209aaa11d353103462605d45e520f
 $app->run();

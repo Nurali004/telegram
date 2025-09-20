@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 namespace controllers;
 use models\AudioModel;
 use models\Category;
@@ -8,11 +9,20 @@ use Telegram\Bot\Api;
 use Telegram\Bot\FileUpload\InputFile;
 use Telegram\Bot\Keyboard\Keyboard;
 use Telegram\Bot\Objects\Audio;
+=======
+
+namespace controllers;
+
+use models\Userbot;
+use Telegram\Bot\Api;
+use Telegram\Bot\Keyboard\Keyboard;
+>>>>>>> 508f52b7fa4209aaa11d353103462605d45e520f
 use vendor\frame\Controller;
 
 class ShopController extends Controller
 {
     public $telegram;
+<<<<<<< HEAD
     public $message;
     public $first_name;
     public $last_name;
@@ -465,11 +475,35 @@ class ShopController extends Controller
         $chat_id = $user->getId();
         $this->chat_id = $chat_id;
 
+=======
+    public $chat_id;
+    public $first_name;
+    public $last_name;
+    public $username;
+    public $location;
+    public $contact;
+    public $text;
+
+    public function __construct(){
+        $this->telegram = new api('8297930277:AAEeX9D0hmwxJdlDu7wtVXQ0dpHGzqrbCAw');
+
+    }
+    public function start()
+    {
+//        $this->telegram->setWebhook(['url' => 'https://140bc15cd05e.ngrok-free.app/shop/start']);
+//        die();
+        $request = $this->telegram->getWebhookUpdate();
+        $message = $request->getMessage();
+        $user = $message->getChat();
+
+        $this->chat_id = $user->getId();
+>>>>>>> 508f52b7fa4209aaa11d353103462605d45e520f
         $this->text = $message->getText();
         $this->first_name = $user->getFirstName();
         $this->last_name = $user->getLastName();
         $this->username = $user->getUsername();
         $this->location = $message['location'] ?? null;
+<<<<<<< HEAD
         if($message->getContact()){
             $contact = $message->getContact();
             $phoneNumber = $contact->getPhoneNumber();
@@ -483,6 +517,59 @@ class ShopController extends Controller
 
     }
 
+=======
+        if ($message->getContact()){
+            $contact = $message->getContact();
+            $this->contact = $contact->getPhoneNumber();
+        }
+
+
+        $this->addUser();
+
+        switch ($this->text){
+            case '/start':
+                $this->showHomePage();
+                break;
+            default:
+                //$this->default();
+                break;
+        }
+
+
+    }
+
+
+
+
+
+
+//    ********* Show PAGES
+    public function showHomePage(){
+        $this->setPage(Page::HOMEPAGE);
+        $reply_markup = Keyboard::make()
+            ->setResizeKeyboard(true)
+            ->row([
+                Keyboard::Button('🛒 Katalog'),
+                Keyboard::Button('🔍 Qidirish')
+            ])
+            ->row([
+                Keyboard::Button('📦 Mening buyurtmalarim'),
+                Keyboard::Button('ℹ️ Biz haqimizda')
+            ])
+        ;
+        $text = "🛍 Online Magazin Bot Mahsulotlarni tanlang yoki qidiruvdan foydalaning.";
+
+        $this->sendMessageWithKeyboard($text, $reply_markup);
+
+    }
+//    ********** END Show PAGES
+
+
+
+
+
+//  *********** TELEGRAM FUNCTIONS
+>>>>>>> 508f52b7fa4209aaa11d353103462605d45e520f
     public function sendMessageRemoveKeyboard($text){
 
         $this->telegram->sendMessage([
@@ -510,6 +597,7 @@ class ShopController extends Controller
             'chat_id' => $this->chat_id,
             'text' => $text,
             'reply_markup' => $reply_markup,
+<<<<<<< HEAD
 
         ]);
 
@@ -593,6 +681,36 @@ class ShopController extends Controller
     //********* END DB FUNCTIONS
 
 
+=======
+        ]);
+
+    }
+//  *********** END TELEGRAM FUNCTIONS
+
+
+
+
+//  ********** DB FUNCTIONS
+
+    public function addUser()
+    {
+        $user = new Userbot();
+        $data = [
+            'first_name' => $this->first_name,
+            'last_name' => $this->last_name,
+            'username' => $this->username,
+            'chat_id' => $this->chat_id,
+        ];
+        $user->save($data);
+    }
+
+    public function setPage($page){
+    }
+    public function getPage(){
+    }
+
+//  ********** END DB FUNCTIONS
+>>>>>>> 508f52b7fa4209aaa11d353103462605d45e520f
 
 
 }
