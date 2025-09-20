@@ -1,14 +1,16 @@
 <?php
-use vendor\frame\App;
+// 1. Composer autoload (Telegram SDK va boshqa kutubxonalar uchun)
+require __DIR__ . '/vendor/autoload.php';
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-session_start();
+// 2. O'z MVC autoload (controllers, models va boshqalar uchun)
+spl_autoload_register(function ($class) {
+    $classPath = str_replace("\\", "/", $class);
+    $file = __DIR__ . '/' . $classPath . '.php';
+    if (file_exists($file)) {
+        require_once $file;
+    }
+});
 
-require_once __DIR__ . "/vendor/autoload.php";
-require_once("vendor/frame/App.php");
-
-
-$app = new App();
+// 3. MVC App ni ishga tushirish
+$app = new vendor\frame\App();
 $app->run();

@@ -7,17 +7,25 @@ use vendor\frame\Controller;
 class TelegramController extends Controller
 {
     public $telegram;
+
+    public $update;
     public $chat_id;
     public $location;
+    public $contact;
 
     public function __construct(){
 
         $this->telegram = new api('8297930277:AAEeX9D0hmwxJdlDu7wtVXQ0dpHGzqrbCAw');
+
+
     }
     public function bot()
     {
 
-         $this->telegram->setWebhook(['url' => 'https://a64ab42996f0.ngrok-free.app/telegram/bot']);
+//       $rs =  $this->telegram->setWebhook(['url' => 'https://e68b19a0fbbc.ngrok-free.app/telegram/bot']);
+// var_dump($rs);
+// die();
+
 
      $request = $this->telegram->getWebhookUpdate();
 
@@ -27,15 +35,14 @@ class TelegramController extends Controller
         $this->chat_id = $chat_id;
         $text = $message->getText();
         $this->location = $message['location'] ?? null;
+        if($message->getContact()){
+            $contact = $message->getContact();
+            $phoneNumber = $contact->getPhoneNumber();
+            $this->contact = $phoneNumber;
+        }
         $messageId = $message['message_id'];
 
-        if ($message->getContact()){
-            $contact = $message->getContact();
-            $phone = $contact->getPhoneNumber();
-            $this->setPhone($phone);
-            $this->showOrderAddressPage();
-            return;
-        }
+
 
 
         switch ($text) {
@@ -78,7 +85,7 @@ class TelegramController extends Controller
                 $this->showPhonePage();
                 break;
 
-            case '⬅️ Ortga':
+            case Text::ORTGA:
                 $this->showHomePage();
                 break;
                 default:
@@ -88,21 +95,21 @@ class TelegramController extends Controller
                             $this->setLang($lang);
                             break;
                         case 'Ism':
-                            if ($text == '⬅️ Ortga') {
+                            if ($text == Text::ORTGA) {
                                 $this->showHomePage();
                                 die();
                             }
                             $this->namePage($text);
                             break;
                         case 'Surname':
-                            if ($text == '⬅️ Ortga') {
+                            if ($text == Text::ORTGA) {
                                 $this->showHomePage();
                                 die();
                             }
                             $this->surnamePage($text);
                             break;
                         case 'Telefon':
-                            if ($text == '⬅️ Ortga') {
+                            if ($text == Text::ORTGA) {
                                 $this->showHomePage();
                                 die();
                             }
@@ -163,6 +170,19 @@ class TelegramController extends Controller
         $this->setPage('Telefon');
         $this->sendMessage("Iltimos! Telefon raqamingizni kiriting");
 
+
+    }
+    public function orderContactNumberPage($text = null){
+
+       if($text != null){
+           $update = json_decode(file_get_contents('php://input'), true);
+           $text = $update['message']['text'];
+       }elseif($this->contact){
+            $text = $this->contact;
+        }
+
+       $this->setPhone($text);
+       $this->showOrderAddressPage();
 
     }
 
@@ -240,6 +260,10 @@ class TelegramController extends Controller
                 Keyboard::Button('8'),
                 Keyboard::Button('9'),
                 Keyboard::Button('10')
+            ])
+            ->row([
+                Keyboard::Button(Text::ORTGA),
+
             ]);
 
         $this->sendMessageWithKeyboard($text, $reply_markup);
@@ -247,9 +271,8 @@ class TelegramController extends Controller
     }
 
     public function countPage($text){
-        $this->setProduct($text);
-        $this->orderContactNumberPage();
-       // $this->showOrderAddressPage();
+        $this->setCount($text);
+        $this->showOrderContactNumberPage();
     }
 
     public function showOrderAddressPage(){
@@ -275,8 +298,8 @@ class TelegramController extends Controller
 
         $this->sendMessageWithKeyboard($text, $reply_markup);
     }
-    public function orderContactNumberPage(){
-        $this->setOrderContactNumberPage(Text::CONTACT_NUMBER_PAGE);
+    public function showOrderContactNumberPage(){
+        $this->setPage(Text::CONTACT_NUMBER_PAGE);
 
         $text = "Yetkazib berish uchun kontaktingizni kiriting";
 
@@ -299,11 +322,16 @@ class TelegramController extends Controller
         $this->sendMessageWithKeyboard($text, $reply_markup);
     }
 
-    public function orderAddressPage($text){
+    public function orderAddressPage($text = null){
 
         if (!is_null($this->location)){
             $text = $this->location;
             $address = "<a href='https://maps.yandex.ru/?pt={$this->location['longitude']},{$this->location['latitude']}'>Lokatsiya</a>";
+        }elseif($text != null){
+            $update = file_get_contents('php://input');
+            $update = json_decode($update, true);
+            $address = $update['message']['text'];
+
         }else{
             $address = $this->getOrderAddress();
         }
@@ -314,6 +342,7 @@ class TelegramController extends Controller
         $product = $this->getProduct();
         $count = $this->getCount();
         $number = $this->getPhone();
+
 
 
 

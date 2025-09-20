@@ -63,17 +63,25 @@ class Model {
         return $stmt->execute();
     }
     public function update($id, $data) {
-        $cols = null;
+        $cols = [];
         foreach ($data as $key => $value) {
-            $cols .= "$key = '$value',";
+            $cols[] = "$key = :$key";
         }
-        $cols = trim($cols, ",");
-       
-        $sql = "update {$this->tableName()} set {$cols} where id = {$id}";
+        $cols = implode(", ", $cols);
+
+        $sql = "UPDATE {$this->tableName()} SET {$cols} WHERE id = :id";
         $stmt = $this->db->prepare($sql);
+
+        // qiymatlarni bog‘lash
+        foreach ($data as $key => $value) {
+            $stmt->bindValue(":$key", $value);
+        }
+        $stmt->bindValue(":id", $id, PDO::PARAM_INT);
+
         return $stmt->execute();
     }
-     public function delete($id) {
+
+    public function delete($id) {
         $sql = "DELETE  FROM {$this->tableName()} WHERE id = {$id}";
         $stmt = $this->db->prepare($sql);
         $stmt->execute();

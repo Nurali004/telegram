@@ -168,7 +168,7 @@ class ComposerStaticInit00a4348b1bce0a1545a9e8c17e1dac05
         ),
         'Doctrine\\Inflector\\' => 
         array (
-            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
+            0 => __DIR__ . '/..' . '/doctrine/inflector/src',
         ),
         'Carbon\\Doctrine\\' => 
         array (

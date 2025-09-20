@@ -1,1 +1,0 @@
-{"page":"Kabinet page","name":"Nurali","surname":"Mavzurov","phone":"998992907704","product":"6","count":"Notebook","address":{"latitude":39.679891,"longitude":66.930211},"number":"Contact number page"}
