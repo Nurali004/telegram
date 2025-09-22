@@ -1,28 +1,23 @@
 <?php
-<<<<<<< HEAD
 namespace controllers;
+use models\AudioItem;
 use models\AudioModel;
 use models\Category;
 use models\Product;
 use models\UserBot;
+use models\VideoItemModel;
+use models\VideoModel;
+use Telegram\Bot\Actions;
 use Telegram\Bot\Api;
 use Telegram\Bot\FileUpload\InputFile;
 use Telegram\Bot\Keyboard\Keyboard;
 use Telegram\Bot\Objects\Audio;
-=======
-
-namespace controllers;
-
-use models\Userbot;
-use Telegram\Bot\Api;
-use Telegram\Bot\Keyboard\Keyboard;
->>>>>>> 508f52b7fa4209aaa11d353103462605d45e520f
+use Telegram\Bot\Objects\Video;
 use vendor\frame\Controller;
 
 class ShopController extends Controller
 {
     public $telegram;
-<<<<<<< HEAD
     public $message;
     public $first_name;
     public $last_name;
@@ -44,7 +39,7 @@ class ShopController extends Controller
     }
   public function start(){
 
-//    $rs =   $this->telegram->setWebhook(['url'=>'https://0adaee44b141.ngrok-free.app/shop/start']);
+//    $rs =   $this->telegram->setWebhook(['url'=>'https://b059068d8c20.ngrok-free.app/shop/start']);
 //    var_dump($rs);
 //       die();
 
@@ -58,6 +53,9 @@ class ShopController extends Controller
           case '/start':
               $this->showHomePage();
               break;
+          case '/about':
+              $this->showInlineKeyboard();
+              break;
           case Text::ABOUT_TEXT:
               break;
           case Text::MY_ORDER:
@@ -69,6 +67,9 @@ class ShopController extends Controller
               break;
           case Text::MUSIC_TEXT:
               $this->showMusicPage();
+              break;
+          case Text::VIDEO_TEXT:
+              $this->showVideoPage();
               break;
 
           case Text::ADMIN_PANEL:
@@ -143,9 +144,6 @@ class ShopController extends Controller
                           $this->setKey('productDesc',$this->text);
                           $product = new Product();
 
-//                          $this->sendMessage(123);
-//                          exit();
-
 
                           $data = [
                               'category_id'=> 1,
@@ -188,6 +186,15 @@ class ShopController extends Controller
                       $this->showMusic();
                   }
                   break;
+              case Page::VIDEO_PAGE:
+                  if ($this->text == Text::BACK_TEXT) {
+                      $this->showHomePage();
+                  }else{
+                      $this->showVideo();
+                  }
+                  break;
+
+
 
           }
               break;
@@ -202,17 +209,174 @@ class ShopController extends Controller
   //********************* SHOW PAGES
 
 
-
     public function showMusicPage(){
 
         $this->setPage(Page::MUSIC_PAGE);
         $this->sendMessage(Text::MUSIC_TEXT_SHOW);
 
     }
+    public function showVideoPage(){
+
+        $this->setPage(Page::VIDEO_PAGE);
+        $this->sendMessage(Text::VIDEO_TEXT_SHOW);
+
+    }
+    public function showVideo(){
+        $video_id = null;
+        $url = $this->text;
+        if (strpos($url, 'youtube.com') !== false || strpos($url, 'youtu.be') !== false) {
+            parse_str(parse_url($url, PHP_URL_QUERY), $params);
+            if (isset($params['v'])) {
+                $video_id = $params['v'];
+            }
+
+            if (!$video_id && strpos($url, 'youtu.be') !== false) {
+                $path = parse_url($url, PHP_URL_PATH);
+                $video_id = ltrim($path, '/');
+
+            }
+
+            if (!$video_id && strpos($url, '/shorts/') !== false) {
+                $path = parse_url($url, PHP_URL_PATH);
+                $param = explode('/', trim($path, '/'));
+                $video_id = end($param);
+
+            }
+        }
+
+        $video_item = new VideoItemModel();
 
 
+
+        $curl = curl_init();
+
+        curl_setopt_array($curl, [
+            CURLOPT_URL => "https://youtube-media-downloader.p.rapidapi.com/v2/video/details?videoId=$video_id&urlAccess=normal&videos=auto&audios=auto",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+            CURLOPT_HTTPHEADER => [
+                "x-rapidapi-host: youtube-media-downloader.p.rapidapi.com",
+                "x-rapidapi-key: 10294a8acamsh325f4f506fd2178p1fd06ajsn725d84dfe7f1"
+            ],
+        ]);
+
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        $data = json_decode($response, true);
+
+        file_put_contents("response.json", json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+
+        $videos = new VideoModel();
+
+        $inform = [
+            'video_id' => $data['id'],
+            'title' => $data['title'],
+            'new_column'=> $data['description'],
+        ];
+        $videos->save($inform);
+
+
+        $videos = $videos->getVideo();
+
+
+        foreach ($data['videos']['items'] as $item) {
+
+            if ($item['extension'] !== 'mp4') {
+                continue;
+            }
+
+            $savedatas = [
+                'url' => $item['url'],
+                'extension' => $item['extension'],
+                'sizeText' => $item['sizeText'],
+                'quality' => $item['quality'],
+                'video_id' => $videos->id,
+            ];
+            $video_item->save($savedatas);
+
+
+        }
+
+        $audio_item = new AudioItem();
+        foreach ($data['audios']['items'] as $item) {
+            if ($item['extension'] !== 'mp3') {
+                continue;
+            }
+
+            $savedatas = [
+                'url' => $item['url'],
+                'extension' => $item['extension'],
+                'sizeText' => $item['sizeText'],
+
+            ];
+            $audio_item->save($savedatas);
+        }
+
+
+
+
+
+
+
+    }
+
+    public function showInlineKeyboard(){
+        $reply_markup = Keyboard::make()
+            ->inline()
+            ->row([
+                Keyboard::inlineButton([
+                    'text' => Text::BACK_TEXT,
+                    'url' => 'https://google.com',
+                ]),
+                Keyboard::inlineButton([
+                    'text'=> 2,
+                    'url' => 'https://google.com',
+                ]),
+                Keyboard::inlineButton([
+                    'text'=> 3,
+                    'url' => 'https://google.com',
+                ]),
+                Keyboard::inlineButton([
+                    'text'=> 3,
+                    'url' => 'https://google.com',
+                ]),
+            ])
+            ->row([
+                Keyboard::inlineButton([
+                    'text' => Text::BACK_TEXT,
+                    'url' => 'https://google.com',
+                ]),
+                Keyboard::inlineButton([
+                    'text'=> 4,
+                    'url' => 'https://google.com',
+                ]),
+                Keyboard::inlineButton([
+                    'text'=> 5,
+                    'url' => 'https://google.com',
+                ]),
+                Keyboard::inlineButton([
+                    'text'=> 6,
+                    'url' => 'https://google.com',
+                ]),
+            ]);
+        $text = "Welcome to about page";
+
+        $this->sendMessageWithKeyboard($text,$reply_markup);
+
+    }
 
     public function sendAudioMessage($audio, $caption = "", $isFileId = false){
+        $this->telegram->sendChatAction([
+            'chat_id' => $this->chat_id,
+            'action' => Actions::UPLOAD_VOICE
+        ]);
     $params = [
         'chat_id' => $this->chat_id,
         'caption' => $caption,
@@ -237,14 +401,10 @@ class ShopController extends Controller
     return null;
 }
 
-
     public function showMusic(){
 
         $url = $this->text;
         $videoId = null;
-
-        //  https://youtu.be/L1dNtXsYgto?si=9Xj-q3LM2-x61JSC  music url
-        //  https://youtu.be/8DuaCN__51g?si=u-5S0KtVl8E3FfKM
 
         if (strpos($url, 'youtube.com') !== false || strpos($url, 'youtu.be') !== false) {
             parse_str(parse_url($url, PHP_URL_QUERY), $params);
@@ -279,59 +439,74 @@ class ShopController extends Controller
         $audioModel = new AudioModel();
         $song = $audioModel->getByVideoId($videoId);
 
+
         if ($song) {
             $size = round($song->filesize / 1024 / 1024, 2) . ' MB';
             $caption = "🎵 <b>{$song->title}</b>\n";
             $caption .= "📦 Hajmi: {$size}\n";
 
             if (!empty($song->file_id)) {
-
-                $this->sendAudioMessage($song->file_id, $caption, true);
-            } else {
-
-                $this->sendAudioMessage($song->link, $caption);
+                $this->sendAudioMessage($song->file_id, $caption,  true);
+                exit();
             }
-            return;
         }
 
 
-        $curl = curl_init();
-        curl_setopt_array($curl, [
-            CURLOPT_URL => "https://youtube-mp36.p.rapidapi.com/dl?id=" . $videoId,
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_HTTPHEADER => [
-                "x-rapidapi-host: youtube-mp36.p.rapidapi.com",
-                "x-rapidapi-key: c65ee05e90msha747563874734c6p1ed25djsne8bce8ddb241"
-            ],
-        ]);
-        $response = curl_exec($curl);
-        curl_close($curl);
-
-        $data = json_decode($response, true);
-
-        if (isset($data['link'])) {
-            $size = round($data['filesize'] / 1024 / 1024, 2) . ' MB';
-            $caption = "🎵 <b>{$data['title']}</b>\n";
-            $caption .= "📦 Hajmi: {$size}\n";
 
 
-            $fileId = $this->sendAudioMessage($data['link'], $caption);
+        $count_check = 1;
+
+//        while(true){
+//            if ($count_check > 3) {
+//                break;
+//            }
+//
+//            $curl = curl_init();
+//            curl_setopt_array($curl, [
+//                CURLOPT_URL => "https://youtube-mp36.p.rapidapi.com/dl?id=" . $videoId,
+//                CURLOPT_RETURNTRANSFER => true,
+//                CURLOPT_HTTPHEADER => [
+//                    "x-rapidapi-host: youtube-mp36.p.rapidapi.com",
+//                    "x-rapidapi-key: c65ee05e90msha747563874734c6p1ed25djsne8bce8ddb241"
+//                ],
+//            ]);
+//            $response = curl_exec($curl);
+//            curl_close($curl);
+//
+//            $data = json_decode($response, true);
+//            $this->sendMessage(json_encode($data));
+//
+//            if (isset($data['link']) && $data['link'] !== '') {
+//                $size = round($data['filesize'] / 1024 / 1024, 2) . ' MB';
+//                $caption = "🎵 <b>{$data['title']}</b>\n";
+//                $caption .= "📦 Hajmi: {$size}\n";
+//
+//
+//                $fileId = $this->sendAudioMessage($data['link'], $caption);
+//
+//
+//                $saveData = [
+//                    'videoId' => $videoId,
+//                    'link' => $data['link'],
+//                    'title' => $data['title'],
+//                    'file_id' => $fileId,
+//                    'filesize' => $data['filesize'],
+//                ];
+//                $audioModel->save($saveData);
+//                break;
+//
+//
+//            } elseif($count_check == 3) {
+//                $this->sendMessage("❌ Qo‘shiqni yuklab bo‘lmadi.");
+//            }
+//            $count_check++;
+//            sleep(6);
+//
+//
+//        }
 
 
-            $saveData = [
-                'videoId' => $videoId,
-                'link' => $data['link'],
-                'title' => $data['title'],
-                'file_id' => $fileId,
-                'filesize' => $data['filesize'],
-            ];
-            $audioModel->save($saveData);
-
-        } else {
-            $this->sendMessage("❌ Qo‘shiqni yuklab bo‘lmadi.");
-        }
     }
-
 
     public function showHomePage(){
         $this->setPage(Page::HOME_PAGE);
@@ -346,7 +521,9 @@ class ShopController extends Controller
                 Keyboard::Button(Text::ABOUT_TEXT)
             ])
             ->row([
+                Keyboard::Button(Text::VIDEO_TEXT),
                 Keyboard::Button(Text::MUSIC_TEXT),
+
             ]);
 
         if($this->isAdmin()){
@@ -361,7 +538,6 @@ class ShopController extends Controller
         $this->sendMessageWithKeyboard($text, $reply_markup);
 
     }
-
 
 
     // ************* END SHOW PAGES
@@ -475,35 +651,11 @@ class ShopController extends Controller
         $chat_id = $user->getId();
         $this->chat_id = $chat_id;
 
-=======
-    public $chat_id;
-    public $first_name;
-    public $last_name;
-    public $username;
-    public $location;
-    public $contact;
-    public $text;
-
-    public function __construct(){
-        $this->telegram = new api('8297930277:AAEeX9D0hmwxJdlDu7wtVXQ0dpHGzqrbCAw');
-
-    }
-    public function start()
-    {
-//        $this->telegram->setWebhook(['url' => 'https://140bc15cd05e.ngrok-free.app/shop/start']);
-//        die();
-        $request = $this->telegram->getWebhookUpdate();
-        $message = $request->getMessage();
-        $user = $message->getChat();
-
-        $this->chat_id = $user->getId();
->>>>>>> 508f52b7fa4209aaa11d353103462605d45e520f
         $this->text = $message->getText();
         $this->first_name = $user->getFirstName();
         $this->last_name = $user->getLastName();
         $this->username = $user->getUsername();
         $this->location = $message['location'] ?? null;
-<<<<<<< HEAD
         if($message->getContact()){
             $contact = $message->getContact();
             $phoneNumber = $contact->getPhoneNumber();
@@ -517,59 +669,6 @@ class ShopController extends Controller
 
     }
 
-=======
-        if ($message->getContact()){
-            $contact = $message->getContact();
-            $this->contact = $contact->getPhoneNumber();
-        }
-
-
-        $this->addUser();
-
-        switch ($this->text){
-            case '/start':
-                $this->showHomePage();
-                break;
-            default:
-                //$this->default();
-                break;
-        }
-
-
-    }
-
-
-
-
-
-
-//    ********* Show PAGES
-    public function showHomePage(){
-        $this->setPage(Page::HOMEPAGE);
-        $reply_markup = Keyboard::make()
-            ->setResizeKeyboard(true)
-            ->row([
-                Keyboard::Button('🛒 Katalog'),
-                Keyboard::Button('🔍 Qidirish')
-            ])
-            ->row([
-                Keyboard::Button('📦 Mening buyurtmalarim'),
-                Keyboard::Button('ℹ️ Biz haqimizda')
-            ])
-        ;
-        $text = "🛍 Online Magazin Bot Mahsulotlarni tanlang yoki qidiruvdan foydalaning.";
-
-        $this->sendMessageWithKeyboard($text, $reply_markup);
-
-    }
-//    ********** END Show PAGES
-
-
-
-
-
-//  *********** TELEGRAM FUNCTIONS
->>>>>>> 508f52b7fa4209aaa11d353103462605d45e520f
     public function sendMessageRemoveKeyboard($text){
 
         $this->telegram->sendMessage([
@@ -581,6 +680,10 @@ class ShopController extends Controller
 
     }
     public function sendMessage($text, $chat_id = null){
+        $this->telegram->sendChatAction([
+            'chat_id' => $this->chat_id,
+            'action'=>Actions::TYPING
+        ]);
         if (is_null($chat_id)) {
             $chat_id = $this->chat_id;
         }
@@ -597,7 +700,6 @@ class ShopController extends Controller
             'chat_id' => $this->chat_id,
             'text' => $text,
             'reply_markup' => $reply_markup,
-<<<<<<< HEAD
 
         ]);
 
@@ -630,7 +732,6 @@ class ShopController extends Controller
         }
         return false;
     }
-
    public function isUser()
    {
       $userbot = new UserBot();
@@ -681,36 +782,6 @@ class ShopController extends Controller
     //********* END DB FUNCTIONS
 
 
-=======
-        ]);
-
-    }
-//  *********** END TELEGRAM FUNCTIONS
-
-
-
-
-//  ********** DB FUNCTIONS
-
-    public function addUser()
-    {
-        $user = new Userbot();
-        $data = [
-            'first_name' => $this->first_name,
-            'last_name' => $this->last_name,
-            'username' => $this->username,
-            'chat_id' => $this->chat_id,
-        ];
-        $user->save($data);
-    }
-
-    public function setPage($page){
-    }
-    public function getPage(){
-    }
-
-//  ********** END DB FUNCTIONS
->>>>>>> 508f52b7fa4209aaa11d353103462605d45e520f
 
 
 }
