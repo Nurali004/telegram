@@ -44,7 +44,7 @@ public function reg(){
    }
    
    
-   $this->view->render("/site/reg");
+   $this->view->render("/site/reg", [], 'Register page');
 }
 public function login(){
  
@@ -58,7 +58,7 @@ public function login(){
       $user->login($data);
 
    }
-   $this->view->render("site/login");
+   $this->view->render("site/login", [], 'Login page');
 }
 public function logout(){
    session_destroy();

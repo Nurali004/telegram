@@ -18,4 +18,11 @@ class VideoItemModel extends Model
         return $stmt->fetch(PDO::FETCH_OBJ);
     }
 
+    public function getBYVideo($id){
+        $sql = "SELECT * FROM `{$this->tableName()}` where `video_id` = '$id'";
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_OBJ);
+    }
+
 }

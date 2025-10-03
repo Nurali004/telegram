@@ -1,5 +1,7 @@
 <?php
+
 namespace controllers;
+
 use Telegram\Bot\Api;
 use Telegram\Bot\Keyboard\Keyboard;
 use vendor\frame\Controller;
@@ -13,12 +15,14 @@ class TelegramController extends Controller
     public $location;
     public $contact;
 
-    public function __construct(){
+    public function __construct()
+    {
 
         $this->telegram = new api('8297930277:AAEeX9D0hmwxJdlDu7wtVXQ0dpHGzqrbCAw');
 
 
     }
+
     public function bot()
     {
 
@@ -27,7 +31,7 @@ class TelegramController extends Controller
 // die();
 
 
-     $request = $this->telegram->getWebhookUpdate();
+        $request = $this->telegram->getWebhookUpdate();
 
         $message = $request->getMessage();
         $user = $message->getChat();
@@ -35,14 +39,12 @@ class TelegramController extends Controller
         $this->chat_id = $chat_id;
         $text = $message->getText();
         $this->location = $message['location'] ?? null;
-        if($message->getContact()){
+        if ($message->getContact()) {
             $contact = $message->getContact();
             $phoneNumber = $contact->getPhoneNumber();
             $this->contact = $phoneNumber;
         }
         $messageId = $message['message_id'];
-
-
 
 
         switch ($text) {
@@ -88,111 +90,120 @@ class TelegramController extends Controller
             case Text::ORTGA:
                 $this->showHomePage();
                 break;
-                default:
-                    switch ($this->getPage()) {
-                        case 'Language page':
-                            $lang = $text;
-                            $this->setLang($lang);
-                            break;
-                        case 'Ism':
-                            if ($text == Text::ORTGA) {
+            default:
+                switch ($this->getPage()) {
+                    case 'Language page':
+                        $lang = $text;
+                        $this->setLang($lang);
+                        break;
+                    case 'Ism':
+                        if ($text == Text::ORTGA) {
+                            $this->showHomePage();
+                            die();
+                        }
+                        $this->namePage($text);
+                        break;
+                    case 'Surname':
+                        if ($text == Text::ORTGA) {
+                            $this->showHomePage();
+                            die();
+                        }
+                        $this->surnamePage($text);
+                        break;
+                    case 'Telefon':
+                        if ($text == Text::ORTGA) {
+                            $this->showHomePage();
+                            die();
+                        }
+                        $this->phonePage($text);
+                        break;
+                    case 'Kabinet page':
+                        switch ($text) {
+                            case Text::ORTGA:
                                 $this->showHomePage();
-                                die();
-                            }
-                            $this->namePage($text);
-                            break;
-                        case 'Surname':
-                            if ($text == Text::ORTGA) {
-                                $this->showHomePage();
-                                die();
-                            }
-                            $this->surnamePage($text);
-                            break;
-                        case 'Telefon':
-                            if ($text == Text::ORTGA) {
-                                $this->showHomePage();
-                                die();
-                            }
-                            $this->phonePage($text);
-                            break;
-                        case 'Kabinet page':
-                            switch ($text) {
-                                case Text::ORTGA:
-                                    $this->showHomePage();
-                                    break;
-                                    }
+                                break;
+                        }
 
-                                case Text::PRODUCTS_PAGE:
-                                    $this->productPage($text);
-                                    break;
-                                case Text::COUNT_PAGE:
-                                    $this->countPage($text);
-                                    break;
+                    case Text::PRODUCTS_PAGE:
+                        $this->productPage($text);
+                        break;
+                    case Text::COUNT_PAGE:
+                        $this->countPage($text);
+                        break;
 
-                                case Text::CONTACT_NUMBER_PAGE:
-                                    $this->orderContactNumberPage($text);
-                                    break;
-                                case Text::ORDER_ADDRESS_PAGE:
-                                    $this->orderAddressPage($text);
-                                    break;
-                    }
-                    break;
+                    case Text::CONTACT_NUMBER_PAGE:
+                        $this->orderContactNumberPage($text);
+                        break;
+                    case Text::ORDER_ADDRESS_PAGE:
+                        $this->orderAddressPage($text);
+                        break;
+                }
+                break;
 
         }
     }
 
-   public function showNamePage(){
-            $this->setPage('Ism');
-            $this->sendMessage("Iltimos! Ismni kiriting");
+    public function showNamePage()
+    {
+        $this->setPage('Ism');
+        $this->sendMessage("Iltimos! Ismni kiriting");
 
 
-   }
+    }
 
-   public function namePage($text){
+    public function namePage($text)
+    {
         $this->setName($text);
-       $this->sendMessage("✅ Saqlandi.");
-   }
+        $this->sendMessage("✅ Saqlandi.");
+    }
 
-    public function showSurnamePage(){
+    public function showSurnamePage()
+    {
         $this->setPage('Surname');
         $this->sendMessage("Iltimos! Familyangizni kiriting");
 
 
     }
 
-    public function surnamePage($text){
+    public function surnamePage($text)
+    {
         $this->setSurName($text);
         $this->sendMessage("✅ Saqlandi.");
     }
 
 
-    public function showPhonePage(){
+    public function showPhonePage()
+    {
         $this->setPage('Telefon');
         $this->sendMessage("Iltimos! Telefon raqamingizni kiriting");
 
 
     }
-    public function orderContactNumberPage($text = null){
 
-       if($text != null){
-           $update = json_decode(file_get_contents('php://input'), true);
-           $text = $update['message']['text'];
-       }elseif($this->contact){
+    public function orderContactNumberPage($text = null)
+    {
+
+        if ($text != null) {
+            $update = json_decode(file_get_contents('php://input'), true);
+            $text = $update['message']['text'];
+        } elseif ($this->contact) {
             $text = $this->contact;
         }
 
-       $this->setPhone($text);
-       $this->showOrderAddressPage();
+        $this->setPhone($text);
+        $this->showOrderAddressPage();
 
     }
 
-    public function phonePage($text){
+    public function phonePage($text)
+    {
         $this->setPhone($text);
         $this->sendMessage("✅ Saqlandi.");
     }
 
 
-    public function showHomePage(){
+    public function showHomePage()
+    {
         $this->setPage("Home page");
         $reply_markup = Keyboard::make()
             ->setResizeKeyboard(true)
@@ -204,20 +215,21 @@ class TelegramController extends Controller
                 Keyboard::Button('Kontaktlar'),
                 Keyboard::Button('Manzil')
             ])
-        ->row([
-            Keyboard::Button('Tilni tanlash'),
-            Keyboard::Button('Kabinet')
-        ])
-        ->row([
-            Keyboard::Button(Text::BUYURTMA_BERISH),
-        ])
-        ;
+            ->row([
+                Keyboard::Button('Tilni tanlash'),
+                Keyboard::Button('Kabinet')
+            ])
+            ->row([
+                Keyboard::Button(Text::BUYURTMA_BERISH),
+            ]);
         $text = "Salom bosh sahifaga xush kelibsiz";
 
         $this->sendMessageWithKeyboard($text, $reply_markup);
 
     }
-    public function showProductsPage(){
+
+    public function showProductsPage()
+    {
         $this->setPage(Text::PRODUCTS_PAGE);
         $reply_markup = Keyboard::make()
             ->setResizeKeyboard(true)
@@ -227,20 +239,21 @@ class TelegramController extends Controller
             ])
             ->row([
                 Keyboard::Button(Text::ORTGA),
-            ])
-        ;
+            ]);
         $text = "Kerakli buyurtmalarni tanlang";
 
         $this->sendMessageWithKeyboard($text, $reply_markup);
 
     }
 
-    public function productPage($text){
+    public function productPage($text)
+    {
         $this->setProduct($text);
         $this->showCountPage();
     }
 
-    public function showCountPage(){
+    public function showCountPage()
+    {
         $this->setPage(Text::COUNT_PAGE);
 
         $text = "Mahsulot sonini raqamda yoki tugmalarda kiriting";
@@ -270,12 +283,14 @@ class TelegramController extends Controller
 
     }
 
-    public function countPage($text){
+    public function countPage($text)
+    {
         $this->setCount($text);
         $this->showOrderContactNumberPage();
     }
 
-    public function showOrderAddressPage(){
+    public function showOrderAddressPage()
+    {
         $this->setPage(Text::ORDER_ADDRESS_PAGE);
 
         $text = "Yetkazib berish manzilini kiriting";
@@ -285,7 +300,7 @@ class TelegramController extends Controller
                 'keyboard' => [
                     [
                         Keyboard::button([
-                            'text'=>" 📍 Lokatsiyani yuborish",
+                            'text' => " 📍 Lokatsiyani yuborish",
                             'request_location' => true
                         ])
                     ]
@@ -298,7 +313,9 @@ class TelegramController extends Controller
 
         $this->sendMessageWithKeyboard($text, $reply_markup);
     }
-    public function showOrderContactNumberPage(){
+
+    public function showOrderContactNumberPage()
+    {
         $this->setPage(Text::CONTACT_NUMBER_PAGE);
 
         $text = "Yetkazib berish uchun kontaktingizni kiriting";
@@ -308,7 +325,7 @@ class TelegramController extends Controller
                 'keyboard' => [
                     [
                         Keyboard::button([
-                            'text'=>"Kontakni yuborish",
+                            'text' => "Kontakni yuborish",
                             'request_contact' => true
                         ])
                     ]
@@ -322,17 +339,18 @@ class TelegramController extends Controller
         $this->sendMessageWithKeyboard($text, $reply_markup);
     }
 
-    public function orderAddressPage($text = null){
+    public function orderAddressPage($text = null)
+    {
 
-        if (!is_null($this->location)){
+        if (!is_null($this->location)) {
             $text = $this->location;
             $address = "<a href='https://maps.yandex.ru/?pt={$this->location['longitude']},{$this->location['latitude']}'>Lokatsiya</a>";
-        }elseif($text != null){
+        } elseif ($text != null) {
             $update = file_get_contents('php://input');
             $update = json_decode($update, true);
             $address = $update['message']['text'];
 
-        }else{
+        } else {
             $address = $this->getOrderAddress();
         }
         $this->setOrderAddress($text);
@@ -342,8 +360,6 @@ class TelegramController extends Controller
         $product = $this->getProduct();
         $count = $this->getCount();
         $number = $this->getPhone();
-
-
 
 
         $order_text = "Yangi buyurtma qabul qilindi\n\n";
@@ -356,7 +372,8 @@ class TelegramController extends Controller
         $this->showHomePage();
     }
 
-    public function showKabinetPage(){
+    public function showKabinetPage()
+    {
         $this->setPage("Kabinet page");
         $reply_markup = Keyboard::make()
             ->setResizeKeyboard(true)
@@ -379,14 +396,15 @@ class TelegramController extends Controller
 
 
         $text = "Salom Kabinetga xush kelibsiz\n\n";
-        $text .= "Ma'lumotlaringiz:\n\n"."Name: $name\n\n Familiya: $surname\n\n Telefon: $phone";
+        $text .= "Ma'lumotlaringiz:\n\n" . "Name: $name\n\n Familiya: $surname\n\n Telefon: $phone";
 
         $this->sendMessageWithKeyboard($text, $reply_markup);
 
     }
 
 
-    public function showLangPage(){
+    public function showLangPage()
+    {
         $this->setPage("Language page");
         $reply_markup = Keyboard::make()
             ->setResizeKeyboard(true)
@@ -408,7 +426,9 @@ class TelegramController extends Controller
         $this->sendMessageWithKeyboard($text, $reply_markup);
 
     }
-    public function showAboutPage(){
+
+    public function showAboutPage()
+    {
         $this->setPage("About page");
 
         $text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
@@ -417,23 +437,26 @@ class TelegramController extends Controller
 
     }
 
-    public function showContactPage(){
+    public function showContactPage()
+    {
         $this->setPage("Contact page");
 
-      $text = "<b>Telefonlar</b>:\n+998992907704\n+998989907704\n+998989907704";
-      $text .= "\n\n<b>Telegram</b>:\n@programmer_004\n@developer_004";
+        $text = "<b>Telefonlar</b>:\n+998992907704\n+998989907704\n+998989907704";
+        $text .= "\n\n<b>Telegram</b>:\n@programmer_004\n@developer_004";
         $this->sendMessage($text);
 
     }
 
-    public function showAddresstPage(){
+    public function showAddresstPage()
+    {
         $this->setPage("Address page");
         $text = "Manzillar:\n Samarqand viloyati Samarqand shahar rudakiy 84";
         $this->sendMessage($text);
 
     }
 
-    public function sendMessageWithKeyboard($text,$reply_markup){
+    public function sendMessageWithKeyboard($text, $reply_markup)
+    {
 
         $this->telegram->sendMessage([
             'chat_id' => $this->chat_id,
@@ -444,7 +467,8 @@ class TelegramController extends Controller
 
     }
 
-    public function sendMessageWithKeyboardOrder($text,$reply_markup){
+    public function sendMessageWithKeyboardOrder($text, $reply_markup)
+    {
 
         $this->telegram->sendMessage([
             'chat_id' => $this->chat_id,
@@ -455,7 +479,8 @@ class TelegramController extends Controller
 
     }
 
-    public function sendMessageRemoveKeyboard($text){
+    public function sendMessageRemoveKeyboard($text)
+    {
 
         $this->telegram->sendMessage([
             'chat_id' => $this->chat_id,
@@ -466,86 +491,119 @@ class TelegramController extends Controller
 
     }
 
-    public function sendMessage($text, $chat_id = null){
-          if (is_null($chat_id)) {
-              $chat_id = $this->chat_id;
-          }
-         $this->telegram->sendMessage([
-             'chat_id' => $chat_id,
-             'text' => $text,
-             'parse_mode' => 'HTML',
-             'disable_web_page_preview' => true
-         ]);
+    public function sendMessage($text, $chat_id = null)
+    {
+        if (is_null($chat_id)) {
+            $chat_id = $this->chat_id;
+        }
+        $this->telegram->sendMessage([
+            'chat_id' => $chat_id,
+            'text' => $text,
+            'parse_mode' => 'HTML',
+            'disable_web_page_preview' => true
+        ]);
     }
 
-    public function setPage($page){
-       $this->setKey('page',$page);
-    }
-    public function getPage(){
-       return $this->getKey('page');
+    public function setPage($page)
+    {
+        $this->setKey('page', $page);
     }
 
-    public function setPhone($phone){
-        $this->setKey('phone',$phone);
+    public function getPage()
+    {
+        return $this->getKey('page');
     }
-    public function getPhone(){
+
+    public function setPhone($phone)
+    {
+        $this->setKey('phone', $phone);
+    }
+
+    public function getPhone()
+    {
         return $this->getKey('phone');
     }
 
-    public function setName($name){
-        $this->setKey('name',$name);
+    public function setName($name)
+    {
+        $this->setKey('name', $name);
     }
-    public function getName(){
+
+    public function getName()
+    {
         return $this->getKey('name');
     }
 
-    public function setCount($count){
-        $this->setKey('count',$count);
+    public function setCount($count)
+    {
+        $this->setKey('count', $count);
     }
-    public function getCount(){
+
+    public function getCount()
+    {
         return $this->getKey('count');
     }
-    public function setOrderAddress($address){
-        $this->setKey('address',$address);
+
+    public function setOrderAddress($address)
+    {
+        $this->setKey('address', $address);
     }
-    public function getOrderAddress(){
+
+    public function getOrderAddress()
+    {
         return $this->getKey('address');
     }
 
-    public function setOrderContactNumberPage($number){
-        $this->setKey('number',$number);
+    public function setOrderContactNumberPage($number)
+    {
+        $this->setKey('number', $number);
     }
-    public function getOrderContactNumberPage(){
+
+    public function getOrderContactNumberPage()
+    {
         return $this->getKey('number');
     }
 
 
-    public function setProduct($product){
-        $this->setKey('product',$product);
+    public function setProduct($product)
+    {
+        $this->setKey('product', $product);
     }
-    public function getProduct(){
+
+    public function getProduct()
+    {
         return $this->getKey('product');
     }
 
-    public function setSurName($surname){
-        $this->setKey('surname',$surname);
+    public function setSurName($surname)
+    {
+        $this->setKey('surname', $surname);
     }
-    public function getSurName(){
+
+    public function getSurName()
+    {
         return $this->getKey('surname');
     }
 
-    public function setLang($lang){
-        $this->setKey('lang',$lang);
+    public function setLang($lang)
+    {
+        $this->setKey('lang', $lang);
     }
-    public function getLang(){
-       return $this->getKey('lang');
+
+    public function getLang()
+    {
+        return $this->getKey('lang');
     }
-    public function setKey($key, $value){
-       $arr = json_decode(file_get_contents($this->chat_id . ".txt", $key), true);
-       $arr[$key] = $value;
-       file_put_contents($this->chat_id . ".txt", json_encode($arr));
+
+    public function setKey($key, $value)
+    {
+        $arr = json_decode(file_get_contents($this->chat_id . ".txt", $key), true);
+        $arr[$key] = $value;
+        file_put_contents($this->chat_id . ".txt", json_encode($arr));
     }
-    public function getKey($key){
+
+    public function getKey($key)
+    {
         $arr = json_decode(file_get_contents($this->chat_id . ".txt", $key), true);
         return $arr[$key] ?? '';
     }

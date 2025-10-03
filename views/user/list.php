@@ -10,6 +10,7 @@
         <th>email</th>
         <th>phone</th>
         <th>role</th>
+        <th>Image</th>
         <th>Action</th>
     </tr>
      <?php foreach($users as $row): ?>
@@ -19,6 +20,7 @@
          <td><?= $row->password; ?></td>
         <td><?= $row->email; ?></td>
         <td><?= $row->phone; ?></td>
+           <td></td>
         <td><?= $row->role; ?></td>
         <td>
             <div class="btn-group">

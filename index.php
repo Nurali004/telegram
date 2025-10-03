@@ -1,4 +1,5 @@
 <?php
+session_start();
 // 1. Composer autoload (Telegram SDK va boshqa kutubxonalar uchun)
 require __DIR__ . '/vendor/autoload.php';
 

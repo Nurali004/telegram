@@ -12,8 +12,8 @@ class VideoModel extends Model
         return 'video';
     }
 
-    public function getVideo(){
-        $sql = "SELECT * FROM `{$this->tableName()}`";
+    public function getBYVideo($id){
+        $sql = "SELECT * FROM `{$this->tableName()}` where `video_id` = '$id'";
         $stmt = $this->db->prepare($sql);
         $stmt->execute();
         return $stmt->fetch(PDO::FETCH_OBJ);

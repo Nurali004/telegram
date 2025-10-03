@@ -38,10 +38,11 @@
       </ul>
      
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-         
-        <button class="btn btn-outline-success " style="margin-right: 10px;" type="submit">search</button>
-             <?php if(isset($_SESSION["user"])) : ?>
+        <input  class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <?php if (isset($_SESSION['user'])): ?>
+          <a href="/user/about"  style="border-radius: 40%; margin-right: 7px"><img src="/<?= $_SESSION['user']->image; ?>" alt="Profil" style="width:40px;height:40px; border-radius: 100%"></a>
+          <?php endif; ?>
+          <?php if(isset($_SESSION["user"])) : ?>
         <a href="/site/logout" class="btn btn-danger" >logout(<?= $_SESSION['user']->username; ?>)</a>
              <?php endif; ?>
       </form>

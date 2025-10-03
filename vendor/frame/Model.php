@@ -59,8 +59,9 @@ class Model {
         foreach ($data as $key => $value) {
             $stmt->bindValue(":$key", $value);
         }
+        $stmt->execute();
 
-        return $stmt->execute();
+        return  $this->db->lastInsertId();
     }
     public function update($id, $data) {
         $cols = [];
