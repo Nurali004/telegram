@@ -59,7 +59,7 @@ class ShopController extends Controller
                 $this->downloadMusicPage();
             }elseif(strpos($this->callback_data, 'page_') !== false){
                 $page = (int)str_replace('page_', '', $this->callback_data);
-                $this->showMusicResult($page);
+                $this->showMusicResult($page, $this->message_id);
 
             }else{
                 $this->showCallBackdata();
@@ -271,7 +271,7 @@ class ShopController extends Controller
         $this->sendMessageWithKeyboard($text, $reply_markup);
     }
 
-    public function showMusicResult($page = 1){
+    public function showMusicResult($page = 1, $message_id = null){
 
        $search = $this->getKey('search');
 
@@ -326,43 +326,69 @@ class ShopController extends Controller
 
         $message_text = "🎵 Natijalar:\n\n";
 
-        $reply_markup = Keyboard::make()->inline();
+        $keyboard = [];
+        $row = [];
 
         foreach ($page_items as $index => $song) {
             $num = $offset + $index + 1;
             $title = $song['title'];
             $message_text .= "{$num}. {$title}\n";
-            $reply_markup->row([
-                Keyboard::inlineButton([
-                    'text' => "🎧 {$num}",
-                    'callback_data' => "song_" . $song['id']
-                ])
+
+
+            $row[] = Keyboard::inlineButton([
+                'text' => "🎧 {$num}",
+                'callback_data' => "song_" . $song['id']
             ]);
+
+
+            if (count($row) === 3) {
+                $keyboard[] = $row;
+                $row = [];
+            }
         }
 
-        $buttons = [];
+        if (!empty($row)) {
+            $keyboard[] = $row;
+        }
+
+
+        $nav_buttons = [];
         if ($page > 1) {
-            $buttons[] = Keyboard::inlineButton([
+            $nav_buttons[] = Keyboard::inlineButton([
                 'text' => '⬅️ Oldingi',
                 'callback_data' => "page_" . ($page - 1)
             ]);
         }
         if ($page < $total_pages) {
-            $buttons[] = Keyboard::inlineButton([
+            $nav_buttons[] = Keyboard::inlineButton([
                 'text' => '➡️ Keyingi',
                 'callback_data' => "page_" . ($page + 1)
             ]);
         }
 
-        if (!empty($buttons)) {
-            $reply_markup->row($buttons);
+        if (!empty($nav_buttons)) {
+            $keyboard[] = $nav_buttons;
         }
 
-        $this->telegram->sendMessage([
-            'chat_id' => $this->chat_id,
-            'text' => $message_text,
-            'reply_markup' => $reply_markup,
+        $reply_markup = Keyboard::make([
+            'inline_keyboard' => $keyboard
         ]);
+        if ($message_id) {
+
+            $this->telegram->editMessageText([
+                'chat_id' => $this->chat_id,
+                'message_id' => $message_id,
+                'text' => $message_text,
+                'reply_markup' => $reply_markup
+            ]);
+        } else {
+            $this->telegram->sendMessage([
+                'chat_id' => $this->chat_id,
+                'text' => $message_text,
+                'reply_markup' => $reply_markup
+            ]);
+        }
+
 
 
     }
@@ -406,11 +432,6 @@ class ShopController extends Controller
 
                 ]);
 
-//                $this->telegram->editMessageText([
-//                    'chat_id' => $this->chat_id,
-//                    'message_id' => $this->message_id,
-//                    'text' => "🎵 Qo‘shiq yuklanmoqda",
-//                ]);
 
 
                 $this->telegram->sendAudio([
@@ -418,7 +439,6 @@ class ShopController extends Controller
                     'audio' => InputFile::create($song['link']),
                     'caption' => $song['title']
                 ]);
-
 
             }else{
                 $this->sendMessage("Qo'shiqni yuklab bo'lmadi");
@@ -998,7 +1018,8 @@ class ShopController extends Controller
 
             $this->callback_data = $callback_query->get('data');
             $this->chat_id = $callback_query->getMessage()->getChat()->getId();
-            $this->message_id = $callback_query->getMessage()->getMessageId();
+            $message_id = $callback_query->getMessage()->getMessageId();
+            $this->message_id = $message_id;
 
         } else {
 

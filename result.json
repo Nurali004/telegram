@@ -1,34 +1,315 @@
 {
     "contents": [
         {
+            "type": "video",
+            "video": {
+                "author": {
+                    "avatar": [
+                        {
+                            "height": 68,
+                            "url": "https:\/\/yt3.ggpht.com\/UH9dUnhbK7zQi87rK3asjlKiF21Sg7Zz9PmJAQMCSkWrWBX7nU5uCmF_Um6LpkGH8P8B4CIR=s68-c-k-c0x00ffffff-no-rj",
+                            "width": 68
+                        }
+                    ],
+                    "badges": [
+                        {
+                            "text": "Verified",
+                            "type": "VERIFIED_CHANNEL"
+                        }
+                    ],
+                    "canonicalBaseUrl": "\/@jahongirotajonov9412",
+                    "channelId": "UCOKxmgZymSblWjxC_ZiwBnQ",
+                    "title": "Jahongir Otajonov"
+                },
+                "badges": [
+                    "4K"
+                ],
+                "descriptionSnippet": "Directed by Sardor Faxddinov Director of photography Sardor Umarbekov Producer Eftan Gimbal operator Farhod Azamov\u00a0...",
+                "isLiveNow": false,
+                "lengthSeconds": 249,
+                "movingThumbnails": [
+                    {
+                        "height": 180,
+                        "url": "https:\/\/i.ytimg.com\/an_webp\/Lp2riL9OyCY\/mqdefault_6s.webp?du=3000&sqp=CKzNnscG&rs=AOn4CLDT-r4AVkCDeouok-61MR1nHQZbYA",
+                        "width": 320
+                    }
+                ],
+                "publishedTimeText": "8 months ago",
+                "stats": {
+                    "views": 35619519
+                },
+                "thumbnails": [
+                    {
+                        "height": 202,
+                        "url": "https:\/\/i.ytimg.com\/vi\/Lp2riL9OyCY\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA6uCdXJaehZcI23Rn97Bs742umvQ",
+                        "width": 360
+                    },
+                    {
+                        "height": 404,
+                        "url": "https:\/\/i.ytimg.com\/vi\/Lp2riL9OyCY\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBMXb_ZTzN9WqUYegwhMioUAuN9MA",
+                        "width": 720
+                    }
+                ],
+                "title": "Jahongir Otajonov - Happy Birthday (Music Video)",
+                "videoId": "Lp2riL9OyCY"
+            }
+        },
+        {
+            "type": "video",
+            "video": {
+                "author": {
+                    "avatar": [
+                        {
+                            "height": 68,
+                            "url": "https:\/\/yt3.ggpht.com\/ytc\/AIdro_nlojL6lScV7wHKCTI0dMmhH2z0ku1enW3nWS5L2o4nig=s68-c-k-c0x00ffffff-no-rj",
+                            "width": 68
+                        }
+                    ],
+                    "badges": [],
+                    "canonicalBaseUrl": "\/@uzbekmusic379",
+                    "channelId": "UCzu-LmkMfPhg_wCmIY6c-Vw",
+                    "title": "Uzbek Music"
+                },
+                "badges": [],
+                "descriptionSnippet": "Video Upload powered by https:\/\/www.TunesToTube.com.",
+                "isLiveNow": false,
+                "lengthSeconds": 300,
+                "movingThumbnails": null,
+                "publishedTimeText": "8 years ago",
+                "stats": {
+                    "views": 4494810
+                },
+                "thumbnails": [
+                    {
+                        "height": 202,
+                        "url": "https:\/\/i.ytimg.com\/vi\/xxGhGQ5Zjoc\/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhVIGEoZTAP&rs=AOn4CLCAd-70oA08lFo_EySYVNVAGQYegg",
+                        "width": 360
+                    },
+                    {
+                        "height": 404,
+                        "url": "https:\/\/i.ytimg.com\/vi\/xxGhGQ5Zjoc\/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhVIGEoZTAP&rs=AOn4CLAzt9UT8xtoRxSbf8ohSj1R_7xIMQ",
+                        "width": 720
+                    }
+                ],
+                "title": "Jahongir Otajonov - Uchrashmadik",
+                "videoId": "xxGhGQ5Zjoc"
+            }
+        },
+        {
+            "type": "video",
+            "video": {
+                "author": {
+                    "avatar": [
+                        {
+                            "height": 68,
+                            "url": "https:\/\/yt3.ggpht.com\/lokZZp-Bse8aqjert0u5JyjI1CmQcYuETDV8XxuX3mAc2jzBZplRoT_wCWlRT4sOLTpgwsNXxhc=s68-c-k-c0x00ffffff-no-rj",
+                            "width": 68
+                        }
+                    ],
+                    "badges": [],
+                    "canonicalBaseUrl": "\/channel\/UC477Gk4q2WYMUIXNI4wVg7Q",
+                    "channelId": "UC477Gk4q2WYMUIXNI4wVg7Q",
+                    "title": "Jahongir Otajonov - Topic"
+                },
+                "badges": [],
+                "descriptionSnippet": "Provided to YouTube by AIR Music Uchrashmoq \u00b7 Jahongir Otajonov Qaddi baland \u2117 2021 NEVO Music Released on:\u00a0...",
+                "isLiveNow": false,
+                "lengthSeconds": 288,
+                "movingThumbnails": null,
+                "publishedTimeText": null,
+                "stats": {
+                    "views": 577956
+                },
+                "thumbnails": [
+                    {
+                        "height": 202,
+                        "url": "https:\/\/i.ytimg.com\/vi\/7MJLrVn7O40\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB8_Ani4ibhKFZBMwPNRMHSKHwCIQ",
+                        "width": 360
+                    },
+                    {
+                        "height": 404,
+                        "url": "https:\/\/i.ytimg.com\/vi\/7MJLrVn7O40\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnOH3wfgEgxF2bZyzssv7Fe1Iumg",
+                        "width": 720
+                    }
+                ],
+                "title": "Uchrashmoq",
+                "videoId": "7MJLrVn7O40"
+            }
+        },
+        {
+            "type": "video",
+            "video": {
+                "author": {
+                    "avatar": [
+                        {
+                            "height": 68,
+                            "url": "https:\/\/yt3.ggpht.com\/UH9dUnhbK7zQi87rK3asjlKiF21Sg7Zz9PmJAQMCSkWrWBX7nU5uCmF_Um6LpkGH8P8B4CIR=s68-c-k-c0x00ffffff-no-rj",
+                            "width": 68
+                        }
+                    ],
+                    "badges": [
+                        {
+                            "text": "Verified",
+                            "type": "VERIFIED_CHANNEL"
+                        }
+                    ],
+                    "canonicalBaseUrl": "\/@jahongirotajonov9412",
+                    "channelId": "UCOKxmgZymSblWjxC_ZiwBnQ",
+                    "title": "Jahongir Otajonov"
+                },
+                "badges": [],
+                "descriptionSnippet": null,
+                "isLiveNow": false,
+                "lengthSeconds": 1144,
+                "movingThumbnails": [
+                    {
+                        "height": 180,
+                        "url": "https:\/\/i.ytimg.com\/an_webp\/_WCv2LvfGqY\/mqdefault_6s.webp?du=3000&sqp=CIrbnscG&rs=AOn4CLDBGtVQYkqZONjyZWCqtxOjSte7QQ",
+                        "width": 320
+                    }
+                ],
+                "publishedTimeText": "8 years ago",
+                "stats": {
+                    "views": 13060665
+                },
+                "thumbnails": [
+                    {
+                        "height": 202,
+                        "url": "https:\/\/i.ytimg.com\/vi\/_WCv2LvfGqY\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPySOQKVzeqp8LasmjSO93vVLNkA",
+                        "width": 360
+                    },
+                    {
+                        "height": 404,
+                        "url": "https:\/\/i.ytimg.com\/vi\/_WCv2LvfGqY\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAxwZtkspiCPA237QfVWjP3JSRrGQ",
+                        "width": 720
+                    }
+                ],
+                "title": "Jahongir Otajonov - Yolg`onchi yor | \u0416\u0430\u0445\u043e\u043d\u0433\u0438\u0440 \u041e\u0442\u0430\u0436\u043e\u043d\u043e\u0432 - \u0401\u043b\u0433\u043e\u043d \u0451\u0440 (concert version 2014)",
+                "videoId": "_WCv2LvfGqY"
+            }
+        },
+        {
+            "type": "video",
+            "video": {
+                "author": {
+                    "avatar": [
+                        {
+                            "height": 68,
+                            "url": "https:\/\/yt3.ggpht.com\/9JV0r3F47LgXeplLr-yEB3QLIWRDnZGIRnZ0UBNiYzbH_2ySH_HSADEl3ZnkpxPlisV3etmv_Q=s68-c-k-c0x00ffffff-no-rj",
+                            "width": 68
+                        }
+                    ],
+                    "badges": [],
+                    "canonicalBaseUrl": "\/@o812.s",
+                    "channelId": "UCNceZp3HCbuJYc7OAPnQabg",
+                    "title": "o812.s "
+                },
+                "badges": [],
+                "descriptionSnippet": null,
+                "isLiveNow": false,
+                "lengthSeconds": 296,
+                "movingThumbnails": null,
+                "publishedTimeText": "1 month ago",
+                "stats": {
+                    "views": 1315504
+                },
+                "thumbnails": [
+                    {
+                        "height": 202,
+                        "url": "https:\/\/i.ytimg.com\/vi\/9ucriScPgf8\/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgeAAtAFigIMCAAQARhbIGEoZTAP&rs=AOn4CLB7PFbHPSJ0YvBCE3lrk1MW2uqX5Q",
+                        "width": 360
+                    },
+                    {
+                        "height": 404,
+                        "url": "https:\/\/i.ytimg.com\/vi\/9ucriScPgf8\/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgeAAtAFigIMCAAQARhbIGEoZTAP&rs=AOn4CLDoQNOpoGhiDm4xmpDKvpBi0fzAJQ",
+                        "width": 720
+                    }
+                ],
+                "title": "Uchrashmadik \u2013 Jahongir Otajonov (Audio)",
+                "videoId": "9ucriScPgf8"
+            }
+        },
+        {
+            "type": "video",
+            "video": {
+                "author": {
+                    "avatar": [
+                        {
+                            "height": 68,
+                            "url": "https:\/\/yt3.ggpht.com\/UH9dUnhbK7zQi87rK3asjlKiF21Sg7Zz9PmJAQMCSkWrWBX7nU5uCmF_Um6LpkGH8P8B4CIR=s68-c-k-c0x00ffffff-no-rj",
+                            "width": 68
+                        }
+                    ],
+                    "badges": [
+                        {
+                            "text": "Verified",
+                            "type": "VERIFIED_CHANNEL"
+                        }
+                    ],
+                    "canonicalBaseUrl": "\/@jahongirotajonov9412",
+                    "channelId": "UCOKxmgZymSblWjxC_ZiwBnQ",
+                    "title": "Jahongir Otajonov"
+                },
+                "badges": [],
+                "descriptionSnippet": null,
+                "isLiveNow": false,
+                "lengthSeconds": 319,
+                "movingThumbnails": [
+                    {
+                        "height": 180,
+                        "url": "https:\/\/i.ytimg.com\/an_webp\/7eUMy9ju-Uo\/mqdefault_6s.webp?du=3000&sqp=CJrHnscG&rs=AOn4CLBreJNUF3_TsF63pqy6GMZ173acvw",
+                        "width": 320
+                    }
+                ],
+                "publishedTimeText": "8 years ago",
+                "stats": {
+                    "views": 22152448
+                },
+                "thumbnails": [
+                    {
+                        "height": 202,
+                        "url": "https:\/\/i.ytimg.com\/vi\/7eUMy9ju-Uo\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCLCq6P0zp2R0sW7eBDFE1UeXRvkA",
+                        "width": 360
+                    },
+                    {
+                        "height": 404,
+                        "url": "https:\/\/i.ytimg.com\/vi\/7eUMy9ju-Uo\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBvCZiVGKV1OY45aayPmse6EmjBsQ",
+                        "width": 720
+                    }
+                ],
+                "title": "Jahongir Otajonov - Bevafo | \u0416\u0430\u0445\u043e\u043d\u0433\u0438\u0440 \u041e\u0442\u0430\u0436\u043e\u043d\u043e\u0432 - \u0411\u0435\u0432\u0430\u0444\u043e (concert verion 2014)",
+                "videoId": "7eUMy9ju-Uo"
+            }
+        },
+        {
             "channel": {
                 "avatar": [
                     {
                         "height": 88,
-                        "url": "https:\/\/yt3.googleusercontent.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj-mo",
+                        "url": "https:\/\/yt3.ggpht.com\/UH9dUnhbK7zQi87rK3asjlKiF21Sg7Zz9PmJAQMCSkWrWBX7nU5uCmF_Um6LpkGH8P8B4CIR=s88-c-k-c0x00ffffff-no-rj-mo",
                         "width": 88
                     },
                     {
                         "height": 176,
-                        "url": "https:\/\/yt3.googleusercontent.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s176-c-k-c0x00ffffff-no-rj-mo",
+                        "url": "https:\/\/yt3.ggpht.com\/UH9dUnhbK7zQi87rK3asjlKiF21Sg7Zz9PmJAQMCSkWrWBX7nU5uCmF_Um6LpkGH8P8B4CIR=s176-c-k-c0x00ffffff-no-rj-mo",
                         "width": 176
                     }
                 ],
                 "badges": [
                     {
-                        "text": "Official Artist Channel",
-                        "type": "AUDIO_BADGE"
+                        "text": "Verified",
+                        "type": "VERIFIED_CHANNEL"
                     }
                 ],
-                "canonicalBaseUrl": "\/@YulduzUsmonovaMusic",
-                "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                "descriptionSnippet": "\u041e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0430\u043d\u0430\u043b \u041d\u0430\u0440\u043e\u0434\u043d\u043e\u0439 \u0430\u0440\u0442\u0438\u0441\u0442\u043a\u0438 \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0438 \u0423\u0437\u0431\u0435\u043a\u0438\u0441\u0442\u0430\u043d \u042e\u043b\u0434\u0443\u0437 \u0423\u0441\u043c\u0430\u043d\u043e\u0432\u043e\u0439. \u0412\u0441\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u043d\u044b\u0435 \u043d\u0430\u00a0...",
+                "canonicalBaseUrl": "\/@jahongirotajonov9412",
+                "channelId": "UCOKxmgZymSblWjxC_ZiwBnQ",
+                "descriptionSnippet": "\u041e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0430\u043d\u0430\u043b Jahongir Otajonov. \u0412\u0441\u0435 \u043f\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043d\u044b. \u041f\u043e\u043b\u043d\u043e\u0435 \u0438\u043b\u0438 \u0447\u0430\u0441\u0442\u0438\u0447\u043d\u043e\u0435 \u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u043e\u0432 \u0437\u0430\u043f\u0440\u0435\u0449\u0435\u043d\u043e\u00a0...",
                 "stats": {
-                    "subscribers": 3490000,
-                    "subscribersText": "3.49M subscribers"
+                    "subscribers": 758000,
+                    "subscribersText": "758K subscribers"
                 },
-                "title": "Yulduz Usmanova",
-                "username": "@YulduzUsmonovaMusic"
+                "title": "Jahongir Otajonov",
+                "username": "@jahongirotajonov9412"
             },
             "type": "channel"
         },
@@ -39,410 +320,38 @@
                     "avatar": [
                         {
                             "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
-                            "width": 68
-                        }
-                    ],
-                    "badges": [
-                        {
-                            "text": "Official Artist Channel",
-                            "type": "AUDIO_BADGE"
-                        }
-                    ],
-                    "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
-                },
-                "badges": [
-                    "4K"
-                ],
-                "descriptionSnippet": "Yulduz Usmonova - Ensa (official video) #new #2025 Music,Lyric Malik Arrangement Timur Rahmonov \u041e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u0439\u0442\u0435 \u0441\u0432\u043e\u0438\u00a0...",
-                "isLiveNow": false,
-                "lengthSeconds": 169,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/ZwKeWWnzeE4\/mqdefault_6s.webp?du=3000&sqp=CMKonscG&rs=AOn4CLB57yQiaAQO2vf5N5Rqjlmg6X7lAA",
-                        "width": 320
-                    }
-                ],
-                "publishedTimeText": "8 months ago",
-                "stats": {
-                    "views": 69683082
-                },
-                "thumbnails": [
-                    {
-                        "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/ZwKeWWnzeE4\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBc9TOgW7P7LgJ2_bcC861EwcNwaQ",
-                        "width": 360
-                    },
-                    {
-                        "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/ZwKeWWnzeE4\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDJ7aHBwnG584qng1Uyfo9CbFihMQ",
-                        "width": 720
-                    }
-                ],
-                "title": "Yulduz Usmonova - Ensa (official video) #new #2025",
-                "videoId": "ZwKeWWnzeE4"
-            }
-        },
-        {
-            "type": "video",
-            "video": {
-                "author": {
-                    "avatar": [
-                        {
-                            "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/wke_1lgv6KJS71_VuDms733BLujljn0qkgQ026c8fge6ijdzFdvlze-m5Nw9CpyoT0gtNI0lSg=s68-c-k-c0x00ffffff-no-rj",
+                            "url": "https:\/\/yt3.ggpht.com\/y4YO15p5mrnmF73kb89j0whS-VycVvQ2JOG45OZTTt0-iB4dMznAbBCSruRBiWMq7wvIezWaSQ=s68-c-k-c0x00ffffff-no-rj",
                             "width": 68
                         }
                     ],
                     "badges": [],
-                    "canonicalBaseUrl": "\/@LeoPlaylists4172",
-                    "channelId": "UCuSgQhQurfwm0fTAr0paoEg",
-                    "title": "Leo Playlists"
+                    "canonicalBaseUrl": "\/@topmusicremix1007",
+                    "channelId": "UCK4JVb54GpL3hmZLu8MXKaA",
+                    "title": "Top\ud83d\udca3 Music\ud83d\udd0a Remix"
                 },
                 "badges": [],
-                "descriptionSnippet": "Yulduz Usmonova 2025 MIX Top Hits [00:00:00] - 01. O'zbekcha gapir [00:03:33] - 02. Muhabbat [00:07:26] - 03. Da kujo shumo\u00a0...",
+                "descriptionSnippet": "Telegram:https:\/\/t.me\/ZuxaBeatsMusic Telegram:https:\/\/t.me\/Top_Music_Remix_1\u00a0...",
                 "isLiveNow": false,
-                "lengthSeconds": 4491,
+                "lengthSeconds": 179,
                 "movingThumbnails": null,
-                "publishedTimeText": "11 days ago",
-                "stats": {
-                    "views": 2449
-                },
-                "thumbnails": [
-                    {
-                        "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/r3Rls5lAWD8\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBTqAyl_wrxC2Q1MeKFDoU49Z7kkg",
-                        "width": 360
-                    },
-                    {
-                        "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/r3Rls5lAWD8\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCxPPGnnLWsESPLLe16qlggbBdYwA",
-                        "width": 720
-                    }
-                ],
-                "title": "Yulduz Usmonova 2025 MIX Top Hits   O'zbekcha gapir, Muhabbat, Da kujo shumo, Senmiding",
-                "videoId": "r3Rls5lAWD8"
-            }
-        },
-        {
-            "type": "video",
-            "video": {
-                "author": {
-                    "avatar": [
-                        {
-                            "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
-                            "width": 68
-                        }
-                    ],
-                    "badges": [
-                        {
-                            "text": "Official Artist Channel",
-                            "type": "AUDIO_BADGE"
-                        }
-                    ],
-                    "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
-                },
-                "badges": [],
-                "descriptionSnippet": "Yulduz Usmonova - Yangi konsert dasturi (2025) \u041e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u0439\u0442\u0435 \u0441\u0432\u043e\u0438 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u043f\u0440\u044f\u043c\u043e \u043d\u0430 \u043f\u0440\u044f\u043c\u043e\u0439 \u044d\u0444\u0438\u0440 \u043f\u043e \u044d\u0442\u043e\u0439 \u0441\u0441\u044b\u043b\u043a\u0435\u00a0...",
-                "isLiveNow": false,
-                "lengthSeconds": 6393,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/zGvPSQAWFlw\/mqdefault_6s.webp?du=3000&sqp=CKCknscG&rs=AOn4CLAynSIJ1_fAGi4ZU1IT7BVrk8FKbA",
-                        "width": 320
-                    }
-                ],
-                "publishedTimeText": "6 months ago",
-                "stats": {
-                    "views": 3280956
-                },
-                "thumbnails": [
-                    {
-                        "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/zGvPSQAWFlw\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBqT0cZtISWyL2vp4bKMK8b_r216g",
-                        "width": 360
-                    },
-                    {
-                        "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/zGvPSQAWFlw\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7D1Te1yMnI7lzWH3Pq2fM1j8lGg",
-                        "width": 720
-                    }
-                ],
-                "title": "Yulduz Usmonova - Yangi konsert dasturi (2025)",
-                "videoId": "zGvPSQAWFlw"
-            }
-        },
-        {
-            "type": "video",
-            "video": {
-                "author": {
-                    "avatar": [
-                        {
-                            "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
-                            "width": 68
-                        }
-                    ],
-                    "badges": [
-                        {
-                            "text": "Official Artist Channel",
-                            "type": "AUDIO_BADGE"
-                        }
-                    ],
-                    "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
-                },
-                "badges": [
-                    "4K"
-                ],
-                "descriptionSnippet": "Singer: Yulduz Usmonova & Malik Song: \u201c O'zbekcha Gapir \u201c Lyrics: Shahboz Fayzullaev Composer: Malik Arrangement: Temur\u00a0...",
-                "isLiveNow": false,
-                "lengthSeconds": 214,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/zITtQxPty5A\/mqdefault_6s.webp?du=3000&sqp=CICcnscG&rs=AOn4CLAmfgqNLUGs-sPonsEzaBgYYky4pg",
-                        "width": 320
-                    }
-                ],
-                "publishedTimeText": "1 year ago",
-                "stats": {
-                    "views": 153007894
-                },
-                "thumbnails": [
-                    {
-                        "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/zITtQxPty5A\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBoUQDQ9fcsegaln_v3JZFcQ1PX0A",
-                        "width": 360
-                    },
-                    {
-                        "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/zITtQxPty5A\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB8wZ53nsnDhDg5eYnEt4T3GTncmA",
-                        "width": 720
-                    }
-                ],
-                "title": "Yulduz Usmonova & Malik - O'zbekcha gapir #new",
-                "videoId": "zITtQxPty5A"
-            }
-        },
-        {
-            "type": "video",
-            "video": {
-                "author": {
-                    "avatar": [
-                        {
-                            "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
-                            "width": 68
-                        }
-                    ],
-                    "badges": [
-                        {
-                            "text": "Official Artist Channel",
-                            "type": "AUDIO_BADGE"
-                        }
-                    ],
-                    "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
-                },
-                "badges": [],
-                "descriptionSnippet": "Yulduz Usmonova - Sevmadi nima (official music video) #new \u041e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u0439\u0442\u0435 \u0441\u0432\u043e\u0438 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u043f\u0440\u044f\u043c\u043e \u043d\u0430 \u043f\u0440\u044f\u043c\u043e\u0439 \u044d\u0444\u0438\u0440 \u043f\u043e \u044d\u0442\u043e\u0439\u00a0...",
-                "isLiveNow": false,
-                "lengthSeconds": 249,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/_z11uo7HjH0\/mqdefault_6s.webp?du=3000&sqp=CKumnscG&rs=AOn4CLD9zW5NZSoVN_YBMauxFP-AVfdKCA",
-                        "width": 320
-                    }
-                ],
-                "publishedTimeText": "5 months ago",
-                "stats": {
-                    "views": 17783804
-                },
-                "thumbnails": [
-                    {
-                        "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/_z11uo7HjH0\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCRDe_cNCn7bW5afHvVQJ1Q_99mBw",
-                        "width": 360
-                    },
-                    {
-                        "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/_z11uo7HjH0\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBjgjbNsy0_szV6thEJv5HtRW6eKw",
-                        "width": 720
-                    }
-                ],
-                "title": "Yulduz Usmonova - Sevmadi nima (official music video) #new",
-                "videoId": "_z11uo7HjH0"
-            }
-        },
-        {
-            "type": "video",
-            "video": {
-                "author": {
-                    "avatar": [
-                        {
-                            "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
-                            "width": 68
-                        }
-                    ],
-                    "badges": [
-                        {
-                            "text": "Official Artist Channel",
-                            "type": "AUDIO_BADGE"
-                        }
-                    ],
-                    "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
-                },
-                "badges": [
-                    "4K"
-                ],
-                "descriptionSnippet": "QATTASIZ? Music, lyrics - Malik Arrangement - Temur Rahmonov Mix mastering - Behzod Ubaydullayev Vocal | FX - Valixon\u00a0...",
-                "isLiveNow": false,
-                "lengthSeconds": 175,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/wiXa-ruvick\/mqdefault_6s.webp?du=3000&sqp=CMagnscG&rs=AOn4CLCFp9RU3ZBECNqhoqfrcbsXaw8B8Q",
-                        "width": 320
-                    }
-                ],
-                "publishedTimeText": "1 month ago",
-                "stats": {
-                    "views": 4442390
-                },
-                "thumbnails": [
-                    {
-                        "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/wiXa-ruvick\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCO8lkMTgGcBsKLwTcTCp4GbZc0Bg",
-                        "width": 360
-                    },
-                    {
-                        "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/wiXa-ruvick\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLApzj5DkKpsni9-AERpnjf7P4DydQ",
-                        "width": 720
-                    }
-                ],
-                "title": "Yulduz Usmonova - Qattasiz? (official video) #2025  #new",
-                "videoId": "wiXa-ruvick"
-            }
-        },
-        {
-            "type": "video",
-            "video": {
-                "author": {
-                    "avatar": [
-                        {
-                            "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
-                            "width": 68
-                        }
-                    ],
-                    "badges": [
-                        {
-                            "text": "Official Artist Channel",
-                            "type": "AUDIO_BADGE"
-                        }
-                    ],
-                    "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
-                },
-                "badges": [
-                    "4K"
-                ],
-                "descriptionSnippet": "Yulduz Usmonova, Shaxboz, Navruz - Uchrashardik (Premyera) #2024 \u041e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u0439\u0442\u0435 \u0441\u0432\u043e\u0438 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u043f\u0440\u044f\u043c\u043e \u043d\u0430 \u043f\u0440\u044f\u043c\u043e\u0439 \u044d\u0444\u0438\u0440\u00a0...",
-                "isLiveNow": false,
-                "lengthSeconds": 206,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/d5BcWpgg4vk\/mqdefault_6s.webp?du=3000&sqp=CPiYnscG&rs=AOn4CLCpUoq_Y6WcU0qiz_fv6WpR7bejAA",
-                        "width": 320
-                    }
-                ],
-                "publishedTimeText": "1 year ago",
-                "stats": {
-                    "views": 53282731
-                },
-                "thumbnails": [
-                    {
-                        "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/d5BcWpgg4vk\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_3wNWQirpAmPvXRbYiEimvLfPfg",
-                        "width": 360
-                    },
-                    {
-                        "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/d5BcWpgg4vk\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBWY6yE275lcEIkiSEak0MtsTK7Ng",
-                        "width": 720
-                    }
-                ],
-                "title": "Yulduz Usmonova, Shaxboz, Navruz - Uchrashardik (Premyera) #2024",
-                "videoId": "d5BcWpgg4vk"
-            }
-        },
-        {
-            "type": "video",
-            "video": {
-                "author": {
-                    "avatar": [
-                        {
-                            "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
-                            "width": 68
-                        }
-                    ],
-                    "badges": [
-                        {
-                            "text": "Official Artist Channel",
-                            "type": "AUDIO_BADGE"
-                        }
-                    ],
-                    "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
-                },
-                "badges": [],
-                "descriptionSnippet": "Yulduz Usmonova - Muhabbat (Premyera) 2021 \u041f\u0440\u0438\u0441\u043e\u0435\u0434\u0438\u043d\u044f\u0439\u0442\u0435\u0441\u044c \u043e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u043c \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430\u043c \u043d\u0430\u0440\u043e\u0434\u043d\u043e\u0439 \u0430\u0440\u0442\u0438\u0441\u0442\u043a\u0438 \u0420\u0423\u0437 \u042e\u043b\u0434\u0443\u0437\u00a0...",
-                "isLiveNow": false,
-                "lengthSeconds": 234,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/dOamNONgAEU\/mqdefault_6s.webp?du=3000&sqp=CKq5nscG&rs=AOn4CLCfZQUG6h82DHO9BqOpSa_Fej-Vng",
-                        "width": 320
-                    }
-                ],
                 "publishedTimeText": "3 years ago",
                 "stats": {
-                    "views": 120263644
+                    "views": 28145613
                 },
                 "thumbnails": [
                     {
                         "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/dOamNONgAEU\/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IEcoJTAP&rs=AOn4CLBS2Rign7auyAN6esZIpMQPp_eP0A",
+                        "url": "https:\/\/i.ytimg.com\/vi\/cPG7HiMFdTA\/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB9AmAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLCvNgVpAk92oa-7fI-_QhlOxPnpLA",
                         "width": 360
                     },
                     {
                         "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/dOamNONgAEU\/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IEcoJTAP&rs=AOn4CLD-sBrfHafNgZFF2SeG_JeKbV5JKQ",
+                        "url": "https:\/\/i.ytimg.com\/vi\/cPG7HiMFdTA\/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB9AmAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLBIYt_Eo61g5irz9XZ5bTwFqrZThw",
                         "width": 720
                     }
                 ],
-                "title": "Yulduz Usmonova - Muhabbat (Premyera) 2021",
-                "videoId": "dOamNONgAEU"
+                "title": "Chaqasan (Dj Zuxa Remix) - Jahongir Otajonov",
+                "videoId": "cPG7HiMFdTA"
             }
         },
         {
@@ -452,155 +361,51 @@
                     "avatar": [
                         {
                             "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
+                            "url": "https:\/\/yt3.ggpht.com\/pOt7Gf2ZGcjSA-rWUVM9AT84_PUMFBAJ1mdXPls5JkBjAelKU2mVqcegeiEtt1JevpYF5f31HA=s68-c-k-c0x00ffffff-no-rj",
                             "width": 68
                         }
                     ],
                     "badges": [
                         {
-                            "text": "Official Artist Channel",
-                            "type": "AUDIO_BADGE"
+                            "text": "Verified",
+                            "type": "VERIFIED_CHANNEL"
                         }
                     ],
-                    "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
-                },
-                "badges": [],
-                "descriptionSnippet": "Yulduz Usmonova - Telbadek sevaman (premyera) #new \u041e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u0439\u0442\u0435 \u0441\u0432\u043e\u0438 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u043f\u0440\u044f\u043c\u043e \u043d\u0430 \u043f\u0440\u044f\u043c\u043e\u0439 \u044d\u0444\u0438\u0440 \u043f\u043e \u044d\u0442\u043e\u0439 \u0441\u0441\u044b\u043b\u043a\u0435\u00a0...",
-                "isLiveNow": false,
-                "lengthSeconds": 227,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/liZY1StYDXY\/mqdefault_6s.webp?du=3000&sqp=CI6bnscG&rs=AOn4CLDK0uMdMr0fsezejLE7ZUpDW-_xUQ",
-                        "width": 320
-                    }
-                ],
-                "publishedTimeText": "1 year ago",
-                "stats": {
-                    "views": 18218822
-                },
-                "thumbnails": [
-                    {
-                        "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/liZY1StYDXY\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAYnEHym6oipQgKv-8LogBS89T6ng",
-                        "width": 360
-                    },
-                    {
-                        "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/liZY1StYDXY\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD2GU7wk9BUzzBvMDRFUt8N5N-mog",
-                        "width": 720
-                    }
-                ],
-                "title": "Yulduz Usmonova - Telbadek sevaman (premyera) #new",
-                "videoId": "liZY1StYDXY"
-            }
-        },
-        {
-            "type": "video",
-            "video": {
-                "author": {
-                    "avatar": [
-                        {
-                            "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
-                            "width": 68
-                        }
-                    ],
-                    "badges": [
-                        {
-                            "text": "Official Artist Channel",
-                            "type": "AUDIO_BADGE"
-                        }
-                    ],
-                    "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
+                    "canonicalBaseUrl": "\/@NEVOTV",
+                    "channelId": "UCkaUg9b9LplVoJdx1JwwyOg",
+                    "title": "NevoMusic"
                 },
                 "badges": [
                     "4K"
                 ],
-                "descriptionSnippet": "Senmiding music: ABDUSAID SALOMIY lyric: ABDUSAID SALOMIY Arrangement: Jorayev Jamshid \u041e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u0439\u0442\u0435 \u0441\u0432\u043e\u0438\u00a0...",
+                "descriptionSnippet": "\u041e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0439 \u0441\u0430\u0439\u0442: https:\/\/nevomusic.net\/ \u041f\u043e\u0434\u043f\u0438\u0448\u0438\u0441\u044c \u043d\u0430 \u043a\u0430\u043d\u0430\u043b http:\/\/bit.ly\/nevotv NEVO @ \u041e\u0434\u043d\u043e\u043a\u043b\u0430\u0441\u0441\u043d\u0438\u043a\u0438 https:\/\/ok.ru\/nevotv\u00a0...",
                 "isLiveNow": false,
-                "lengthSeconds": 199,
+                "lengthSeconds": 197,
                 "movingThumbnails": [
                     {
                         "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/riQJbIvB-xk\/mqdefault_6s.webp?du=3000&sqp=CM7AnscG&rs=AOn4CLBpvq-pKKNmWEWTdgC7uovJ6YTrMg",
-                        "width": 320
-                    }
-                ],
-                "publishedTimeText": "1 year ago",
-                "stats": {
-                    "views": 125295011
-                },
-                "thumbnails": [
-                    {
-                        "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/riQJbIvB-xk\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDhBXyXhwsuQWDNJbj7jbTeS8c48Q",
-                        "width": 360
-                    },
-                    {
-                        "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/riQJbIvB-xk\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCbOBoLCHC2ysc09F2z9pNS4shksg",
-                        "width": 720
-                    }
-                ],
-                "title": "Yulduz Usmonova - Senmiding (official video) #new",
-                "videoId": "riQJbIvB-xk"
-            }
-        },
-        {
-            "type": "video",
-            "video": {
-                "author": {
-                    "avatar": [
-                        {
-                            "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
-                            "width": 68
-                        }
-                    ],
-                    "badges": [
-                        {
-                            "text": "Official Artist Channel",
-                            "type": "AUDIO_BADGE"
-                        }
-                    ],
-                    "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
-                },
-                "badges": [],
-                "descriptionSnippet": "Yulduz Usmonova - Bebaho (Premyera) 2021 | \u042e\u043b\u0434\u0443\u0437 \u0423\u0441\u043c\u043e\u043d\u043e\u0432\u0430 - \u0411\u0435\u0431\u0430\u04b3\u043e (\u041f\u0440\u0435\u043c\u044c\u0435\u0440\u0430) 2021 #yulduzusmonova #premyera\u00a0...",
-                "isLiveNow": false,
-                "lengthSeconds": 256,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/SRWVxNfViHc\/mqdefault_6s.webp?du=3000&sqp=CKy-nscG&rs=AOn4CLCuvdoVNKhP4W91q6978L7LEYcUPQ",
+                        "url": "https:\/\/i.ytimg.com\/an_webp\/d5VqpYZrQ6Q\/mqdefault_6s.webp?du=3000&sqp=CJjDnscG&rs=AOn4CLCHsV0etAXo8vQG8Y8S5npdpuw9uw",
                         "width": 320
                     }
                 ],
                 "publishedTimeText": "4 years ago",
                 "stats": {
-                    "views": 59164655
+                    "views": 18290895
                 },
                 "thumbnails": [
                     {
                         "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/SRWVxNfViHc\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAmEUS7ZlCJD13LuldrDnsks87YRA",
+                        "url": "https:\/\/i.ytimg.com\/vi\/d5VqpYZrQ6Q\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAaYCI2IxqEKa33XCne3hgqDAeCog",
                         "width": 360
                     },
                     {
                         "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/SRWVxNfViHc\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAKk0QD3OP_FIjaKXbmfjMASKSJrA",
+                        "url": "https:\/\/i.ytimg.com\/vi\/d5VqpYZrQ6Q\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCW3QbzFv_EANc2HUTiFPAKWLRf3g",
                         "width": 720
                     }
                 ],
-                "title": "Yulduz Usmonova - Bebaho (Premyera) 2021 | \u042e\u043b\u0434\u0443\u0437 \u0423\u0441\u043c\u043e\u043d\u043e\u0432\u0430 - \u0411\u0435\u0431\u0430\u04b3\u043e (\u041f\u0440\u0435\u043c\u044c\u0435\u0440\u0430) 2021",
-                "videoId": "SRWVxNfViHc"
+                "title": "Jahongir Otajonov - O'ynasin (Official Music Video)",
+                "videoId": "d5VqpYZrQ6Q"
             }
         },
         {
@@ -610,211 +415,38 @@
                     "avatar": [
                         {
                             "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
+                            "url": "https:\/\/yt3.ggpht.com\/ytc\/AIdro_nlojL6lScV7wHKCTI0dMmhH2z0ku1enW3nWS5L2o4nig=s68-c-k-c0x00ffffff-no-rj",
                             "width": 68
                         }
                     ],
-                    "badges": [
-                        {
-                            "text": "Official Artist Channel",
-                            "type": "AUDIO_BADGE"
-                        }
-                    ],
-                    "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
-                },
-                "badges": [
-                    "4K"
-                ],
-                "descriptionSnippet": "\u043f\u0440\u0435\u043c\u044c\u0435\u0440\u0430 #\u0445\u0438\u0442 #\u044e\u043b\u0434\u0443\u0437\u0443\u0441\u043c\u0430\u043d\u043e\u0432\u0430 #premyera #yulduzusmonova #uzbekistan #music YULDUZ USMONOVA - DAYDI YORIM\u00a0...",
-                "isLiveNow": false,
-                "lengthSeconds": 248,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/KPPMI-A7h-c\/mqdefault_6s.webp?du=3000&sqp=CPW6nscG&rs=AOn4CLBXBMz5cHHkxnEwRCxaYvwlVBUTCw",
-                        "width": 320
-                    }
-                ],
-                "publishedTimeText": "1 year ago",
-                "stats": {
-                    "views": 55435402
-                },
-                "thumbnails": [
-                    {
-                        "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/KPPMI-A7h-c\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB2ivUmzv4RB0FqgfpSHrXAwJ9sOw",
-                        "width": 360
-                    },
-                    {
-                        "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/KPPMI-A7h-c\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLArq4GIr9mBjsI554NdCTuPT_RJhw",
-                        "width": 720
-                    }
-                ],
-                "title": "Yulduz Usmonova - Daydi yorim (official video) #new",
-                "videoId": "KPPMI-A7h-c"
-            }
-        },
-        {
-            "type": "video",
-            "video": {
-                "author": {
-                    "avatar": [
-                        {
-                            "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
-                            "width": 68
-                        }
-                    ],
-                    "badges": [
-                        {
-                            "text": "Official Artist Channel",
-                            "type": "AUDIO_BADGE"
-                        }
-                    ],
-                    "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
-                },
-                "badges": [
-                    "4K"
-                ],
-                "descriptionSnippet": "KU-KU Music: Malik Lyrics: Shahboz Fayzullayev Arrangement: Temur Rahmonov \u041e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u0439\u0442\u0435 \u0441\u0432\u043e\u0438 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u043f\u0440\u044f\u043c\u043e \u043d\u0430\u00a0...",
-                "isLiveNow": false,
-                "lengthSeconds": 201,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/gYygtph3JBA\/mqdefault_6s.webp?du=3000&sqp=CLCdnscG&rs=AOn4CLDAphxDbe1piVrVX_v-e9HVtINsXQ",
-                        "width": 320
-                    }
-                ],
-                "publishedTimeText": "7 months ago",
-                "stats": {
-                    "views": 9716961
-                },
-                "thumbnails": [
-                    {
-                        "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/gYygtph3JBA\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBoqrNZkIWwfDP8YOjwfNmVAezWGw",
-                        "width": 360
-                    },
-                    {
-                        "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/gYygtph3JBA\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBa2hPXKRM03nQpiOLrfm4zi2dY7A",
-                        "width": 720
-                    }
-                ],
-                "title": "Yulduz Usmonova, Malik - KU-KU (official music video) #new  #2025",
-                "videoId": "gYygtph3JBA"
-            }
-        },
-        {
-            "type": "video",
-            "video": {
-                "author": {
-                    "avatar": [
-                        {
-                            "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
-                            "width": 68
-                        }
-                    ],
-                    "badges": [
-                        {
-                            "text": "Official Artist Channel",
-                            "type": "AUDIO_BADGE"
-                        }
-                    ],
-                    "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
-                },
-                "badges": [
-                    "CC"
-                ],
-                "descriptionSnippet": "Yulduz Usmonova - Tut qo'limdan | \u042e\u043b\u0434\u0443\u0437 \u0423\u0441\u043c\u043e\u043d\u043e\u0432\u0430 - \u0422\u0443\u0442 \u049b\u045e\u043b\u0438\u043c\u0434\u0430\u043d (2018) \u041f\u0440\u0435\u043c\u044c\u0435\u0440\u0430 \u043a\u043b\u0438\u043f\u0430. \u0410\u0432\u0442\u043e\u0440 \u043c\u0443\u0437\u044b\u043a\u0438 \u0438 \u0441\u0442\u0438\u0445\u043e\u0432 \u042e\u043b\u0434\u0443\u0437\u00a0...",
-                "isLiveNow": false,
-                "lengthSeconds": 293,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/q-84M5nrGQc\/mqdefault_6s.webp?du=3000&sqp=COC4nscG&rs=AOn4CLBYMyETrT6BlbLKihOrYGJgrRJVWg",
-                        "width": 320
-                    }
-                ],
-                "publishedTimeText": "7 years ago",
-                "stats": {
-                    "views": 40150157
-                },
-                "thumbnails": [
-                    {
-                        "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/q-84M5nrGQc\/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFYoTTAP&rs=AOn4CLCndZeJZ1_lwzUePgO49KIP0yDYvQ",
-                        "width": 360
-                    },
-                    {
-                        "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/q-84M5nrGQc\/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFYoTTAP&rs=AOn4CLDwYdGf2CDIMU2pIY2ArX9ci0djiw",
-                        "width": 720
-                    }
-                ],
-                "title": "Yulduz Usmonova - Tut qo'limdan | \u042e\u043b\u0434\u0443\u0437 \u0423\u0441\u043c\u043e\u043d\u043e\u0432\u0430 - \u0422\u0443\u0442 \u049b\u045e\u043b\u0438\u043c\u0434\u0430\u043d (2018)",
-                "videoId": "q-84M5nrGQc"
-            }
-        },
-        {
-            "type": "video",
-            "video": {
-                "author": {
-                    "avatar": [
-                        {
-                            "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
-                            "width": 68
-                        }
-                    ],
-                    "badges": [
-                        {
-                            "text": "Official Artist Channel",
-                            "type": "AUDIO_BADGE"
-                        }
-                    ],
-                    "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
+                    "badges": [],
+                    "canonicalBaseUrl": "\/@uzbekmusic379",
+                    "channelId": "UCzu-LmkMfPhg_wCmIY6c-Vw",
+                    "title": "Uzbek Music"
                 },
                 "badges": [],
-                "descriptionSnippet": "Yulduz Usmonova - Yosuman (official audio) #new #music \u041e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u0439\u0442\u0435 \u0441\u0432\u043e\u0438 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u043f\u0440\u044f\u043c\u043e \u043d\u0430 \u043f\u0440\u044f\u043c\u043e\u0439 \u044d\u0444\u0438\u0440 \u043f\u043e \u044d\u0442\u043e\u0439\u00a0...",
+                "descriptionSnippet": null,
                 "isLiveNow": false,
-                "lengthSeconds": 206,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/ktKEJHLD0ps\/mqdefault_6s.webp?du=3000&sqp=CLWWnscG&rs=AOn4CLDG_VRpIz8fbnkZ4oM8DiK1hPYXmA",
-                        "width": 320
-                    }
-                ],
-                "publishedTimeText": "1 month ago",
+                "lengthSeconds": 210,
+                "movingThumbnails": null,
+                "publishedTimeText": "8 years ago",
                 "stats": {
-                    "views": 599908
+                    "views": 8658179
                 },
                 "thumbnails": [
                     {
                         "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/ktKEJHLD0ps\/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIE8oXzAP&rs=AOn4CLBIN-8wTVixyk0nyziC8Zdw-M_AsA",
+                        "url": "https:\/\/i.ytimg.com\/vi\/CTmi0BZ0xCo\/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhVIGEoZTAP&rs=AOn4CLA5eOKWBmatWH3-mKgGXHJLP_sDGQ",
                         "width": 360
                     },
                     {
                         "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/ktKEJHLD0ps\/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIE8oXzAP&rs=AOn4CLAWno3SBDWlKWu8q3KqzxxDiAN3kQ",
+                        "url": "https:\/\/i.ytimg.com\/vi\/CTmi0BZ0xCo\/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhVIGEoZTAP&rs=AOn4CLDN8CKk_6sVG8QwODd1iL43YTO4AA",
                         "width": 720
                     }
                 ],
-                "title": "Yulduz Usmonova - Yosuman (official audio) #new #music #2025 ",
-                "videoId": "ktKEJHLD0ps"
+                "title": "Jahongir Otajonov - Ayol makri",
+                "videoId": "CTmi0BZ0xCo"
             }
         },
         {
@@ -824,7 +456,115 @@
                     "avatar": [
                         {
                             "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
+                            "url": "https:\/\/yt3.ggpht.com\/UH9dUnhbK7zQi87rK3asjlKiF21Sg7Zz9PmJAQMCSkWrWBX7nU5uCmF_Um6LpkGH8P8B4CIR=s68-c-k-c0x00ffffff-no-rj",
+                            "width": 68
+                        }
+                    ],
+                    "badges": [
+                        {
+                            "text": "Verified",
+                            "type": "VERIFIED_CHANNEL"
+                        }
+                    ],
+                    "canonicalBaseUrl": "\/@jahongirotajonov9412",
+                    "channelId": "UCOKxmgZymSblWjxC_ZiwBnQ",
+                    "title": "Jahongir Otajonov"
+                },
+                "badges": [
+                    "4K"
+                ],
+                "descriptionSnippet": "Director: Sardor Faxriddinov Director of photography: Sardor Umarbekov Location manager\/Administrator: Ibrohim Saidjabborov\u00a0...",
+                "isLiveNow": false,
+                "lengthSeconds": 202,
+                "movingThumbnails": [
+                    {
+                        "height": 180,
+                        "url": "https:\/\/i.ytimg.com\/an_webp\/0nZOw-rIpoA\/mqdefault_6s.webp?du=3000&sqp=CMDRnscG&rs=AOn4CLDymUNFKD2Q_sMfoxdNtuBGBaGoUw",
+                        "width": 320
+                    }
+                ],
+                "publishedTimeText": "10 months ago",
+                "stats": {
+                    "views": 5946441
+                },
+                "thumbnails": [
+                    {
+                        "height": 202,
+                        "url": "https:\/\/i.ytimg.com\/vi\/0nZOw-rIpoA\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAkFz6yLmGHURTm5uOCaYrzs-_ekw",
+                        "width": 360
+                    },
+                    {
+                        "height": 404,
+                        "url": "https:\/\/i.ytimg.com\/vi\/0nZOw-rIpoA\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAV-v2BfapyZSkpgrdxGbzyFwNdYQ",
+                        "width": 720
+                    }
+                ],
+                "title": "Jahongir Otajonov - Poram (Music Video) [2024]",
+                "videoId": "0nZOw-rIpoA"
+            }
+        },
+        {
+            "type": "video",
+            "video": {
+                "author": {
+                    "avatar": [
+                        {
+                            "height": 68,
+                            "url": "https:\/\/yt3.ggpht.com\/pOt7Gf2ZGcjSA-rWUVM9AT84_PUMFBAJ1mdXPls5JkBjAelKU2mVqcegeiEtt1JevpYF5f31HA=s68-c-k-c0x00ffffff-no-rj",
+                            "width": 68
+                        }
+                    ],
+                    "badges": [
+                        {
+                            "text": "Verified",
+                            "type": "VERIFIED_CHANNEL"
+                        }
+                    ],
+                    "canonicalBaseUrl": "\/@NEVOTV",
+                    "channelId": "UCkaUg9b9LplVoJdx1JwwyOg",
+                    "title": "NevoMusic"
+                },
+                "badges": [
+                    "4K"
+                ],
+                "descriptionSnippet": "Subscribe: https:\/\/www.youtube.com\/nevotv?sub_confirmation=1 \u25aa\ufe0f Follow @NevoMusic : NV: https:\/\/nevomusic.net\/ VK:\u00a0...",
+                "isLiveNow": false,
+                "lengthSeconds": 219,
+                "movingThumbnails": [
+                    {
+                        "height": 180,
+                        "url": "https:\/\/i.ytimg.com\/an_webp\/Oq_JYi-W__c\/mqdefault_6s.webp?du=3000&sqp=CMvVnscG&rs=AOn4CLBimQThf23vwyfQZ5jwhLKrfPqx3w",
+                        "width": 320
+                    }
+                ],
+                "publishedTimeText": "2 years ago",
+                "stats": {
+                    "views": 51690328
+                },
+                "thumbnails": [
+                    {
+                        "height": 202,
+                        "url": "https:\/\/i.ytimg.com\/vi\/Oq_JYi-W__c\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCclCAFykZjIHSUvi1hVSDL2wnzvA",
+                        "width": 360
+                    },
+                    {
+                        "height": 404,
+                        "url": "https:\/\/i.ytimg.com\/vi\/Oq_JYi-W__c\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDe4YukEEnCnuaTAdu3NetYfofD7Q",
+                        "width": 720
+                    }
+                ],
+                "title": "Jahongir Otajonov - Bom-bom (Official Music Video)",
+                "videoId": "Oq_JYi-W__c"
+            }
+        },
+        {
+            "type": "video",
+            "video": {
+                "author": {
+                    "avatar": [
+                        {
+                            "height": 68,
+                            "url": "https:\/\/yt3.ggpht.com\/8nHFLs5Ld6Wg05iKDIzunViD6940_D1zBf20Zk9GuDCO6PKCdqYXeFDCIbZQnBUDLn4HVSbMud0=s88-c-k-c0x00ffffff-no-rj",
                             "width": 68
                         }
                     ],
@@ -835,40 +575,399 @@
                         }
                     ],
                     "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
+                    "channelId": "UCMNq5vLHxLgJBmAbvv375PA",
+                    "title": "Afruza"
+                },
+                "badges": [],
+                "descriptionSnippet": "Contacts |Telegram PR \u0438 \u0440\u0435\u043a\u043b\u0430\u043c\u0430: +998909976688 Instagram: https:\/\/www.instagram.com\/_afruzaofficial_\/ TikTok:\u00a0...",
+                "isLiveNow": false,
+                "lengthSeconds": 220,
+                "movingThumbnails": [
+                    {
+                        "height": 180,
+                        "url": "https:\/\/i.ytimg.com\/an_webp\/1Hdk8TgtpkY\/mqdefault_6s.webp?du=3000&sqp=CPa0nscG&rs=AOn4CLCy9Avv1d0DdtAzgrZxbmpBz-XYQw",
+                        "width": 320
+                    }
+                ],
+                "publishedTimeText": "2 years ago",
+                "stats": {
+                    "views": 3637293
+                },
+                "thumbnails": [
+                    {
+                        "height": 202,
+                        "url": "https:\/\/i.ytimg.com\/vi\/1Hdk8TgtpkY\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA8hM6N6EC6ysn_FLbzP61yJil2gg",
+                        "width": 360
+                    },
+                    {
+                        "height": 404,
+                        "url": "https:\/\/i.ytimg.com\/vi\/1Hdk8TgtpkY\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDab7CxyK1zpAFnw0TeVoZdDTgmgg",
+                        "width": 720
+                    }
+                ],
+                "title": "Afruza & Jahongir Otajonov - Chaqasan (the cover up)",
+                "videoId": "1Hdk8TgtpkY"
+            }
+        },
+        {
+            "type": "video",
+            "video": {
+                "author": {
+                    "avatar": [
+                        {
+                            "height": 68,
+                            "url": "https:\/\/yt3.ggpht.com\/UH9dUnhbK7zQi87rK3asjlKiF21Sg7Zz9PmJAQMCSkWrWBX7nU5uCmF_Um6LpkGH8P8B4CIR=s68-c-k-c0x00ffffff-no-rj",
+                            "width": 68
+                        }
+                    ],
+                    "badges": [
+                        {
+                            "text": "Verified",
+                            "type": "VERIFIED_CHANNEL"
+                        }
+                    ],
+                    "canonicalBaseUrl": "\/@jahongirotajonov9412",
+                    "channelId": "UCOKxmgZymSblWjxC_ZiwBnQ",
+                    "title": "Jahongir Otajonov"
                 },
                 "badges": [
                     "4K"
                 ],
-                "descriptionSnippet": "\u041e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u0439\u0442\u0435 \u0441\u0432\u043e\u0438 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u043f\u0440\u044f\u043c\u043e \u043d\u0430 \u043f\u0440\u044f\u043c\u043e\u0439 \u044d\u0444\u0438\u0440 \u043f\u043e \u044d\u0442\u043e\u0439 \u0441\u0441\u044b\u043b\u043a\u0435 https:\/\/www.donationalerts.com\/r\/yulduzusmonova\u00a0...",
+                "descriptionSnippet": "Based on a poem by Makhtumkuli Pyragy (18th-century Turkmen poet) Directed by Sardor Fakhriddinov Director of photography\u00a0...",
                 "isLiveNow": false,
-                "lengthSeconds": 204,
+                "lengthSeconds": 277,
                 "movingThumbnails": [
                     {
                         "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/m6DY22r_Tzg\/mqdefault_6s.webp?du=3000&sqp=CKC9nscG&rs=AOn4CLAoPbAO4wvigijgwoUk1ar_o88pTA",
+                        "url": "https:\/\/i.ytimg.com\/an_webp\/1BVnDL4o98I\/mqdefault_6s.webp?du=3000&sqp=CNzanscG&rs=AOn4CLC5FZGVjYidVx1PCkn-ebBR7ZAs3w",
+                        "width": 320
+                    }
+                ],
+                "publishedTimeText": "2 months ago",
+                "stats": {
+                    "views": 1015591
+                },
+                "thumbnails": [
+                    {
+                        "height": 202,
+                        "url": "https:\/\/i.ytimg.com\/vi\/1BVnDL4o98I\/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARguIF8oZTAP&rs=AOn4CLDkH1oj-9kj6oYmU47fmY_xUR3VXA",
+                        "width": 360
+                    },
+                    {
+                        "height": 404,
+                        "url": "https:\/\/i.ytimg.com\/vi\/1BVnDL4o98I\/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARguIF8oZTAP&rs=AOn4CLAgrZlnqY6D590AnPl7kVWpbFGsDA",
+                        "width": 720
+                    }
+                ],
+                "title": "Jahongir Otajonov - Kunlarim (Music Video)",
+                "videoId": "1BVnDL4o98I"
+            }
+        },
+        {
+            "type": "video",
+            "video": {
+                "author": {
+                    "avatar": [
+                        {
+                            "height": 68,
+                            "url": "https:\/\/yt3.ggpht.com\/UH9dUnhbK7zQi87rK3asjlKiF21Sg7Zz9PmJAQMCSkWrWBX7nU5uCmF_Um6LpkGH8P8B4CIR=s68-c-k-c0x00ffffff-no-rj",
+                            "width": 68
+                        }
+                    ],
+                    "badges": [
+                        {
+                            "text": "Verified",
+                            "type": "VERIFIED_CHANNEL"
+                        }
+                    ],
+                    "canonicalBaseUrl": "\/@jahongirotajonov9412",
+                    "channelId": "UCOKxmgZymSblWjxC_ZiwBnQ",
+                    "title": "Jahongir Otajonov"
+                },
+                "badges": [
+                    "4K"
+                ],
+                "descriptionSnippet": "CREDITS: A Poet Maxtumquli Director - Sardor Fakhriddinov Director of photography - Sardor Umarbekov Music producer\/Color\u00a0...",
+                "isLiveNow": false,
+                "lengthSeconds": 255,
+                "movingThumbnails": [
+                    {
+                        "height": 180,
+                        "url": "https:\/\/i.ytimg.com\/an_webp\/sfE4AyBUXAE\/mqdefault_6s.webp?du=3000&sqp=COrOnscG&rs=AOn4CLBiwpfDDma4_lWZCKmQTNQ_IgVq9A",
                         "width": 320
                     }
                 ],
                 "publishedTimeText": "1 year ago",
                 "stats": {
-                    "views": 10398241
+                    "views": 2740760
                 },
                 "thumbnails": [
                     {
                         "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/m6DY22r_Tzg\/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIFcoPjAP&rs=AOn4CLC6uBylH5l4bDpZN88WDOVOHIAYzw",
+                        "url": "https:\/\/i.ytimg.com\/vi\/sfE4AyBUXAE\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLANS4XwtFdSg4vAoXuMNrIvcz8HVA",
                         "width": 360
                     },
                     {
                         "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/m6DY22r_Tzg\/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIFcoPjAP&rs=AOn4CLB3NppLc0aJP_DXKLE8UnaaqZn4Yg",
+                        "url": "https:\/\/i.ytimg.com\/vi\/sfE4AyBUXAE\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAfZfr3MzjuYkPPuxVEdRMhXofvkg",
                         "width": 720
                     }
                 ],
-                "title": "Yulduz Usmonova - Telbadek sevaman (audio) #music",
-                "videoId": "m6DY22r_Tzg"
+                "title": "Jahongir Otajonov - Foniy Dunyo (Music Video)",
+                "videoId": "sfE4AyBUXAE"
+            }
+        },
+        {
+            "type": "video",
+            "video": {
+                "author": {
+                    "avatar": [
+                        {
+                            "height": 68,
+                            "url": "https:\/\/yt3.ggpht.com\/pOt7Gf2ZGcjSA-rWUVM9AT84_PUMFBAJ1mdXPls5JkBjAelKU2mVqcegeiEtt1JevpYF5f31HA=s68-c-k-c0x00ffffff-no-rj",
+                            "width": 68
+                        }
+                    ],
+                    "badges": [
+                        {
+                            "text": "Verified",
+                            "type": "VERIFIED_CHANNEL"
+                        }
+                    ],
+                    "canonicalBaseUrl": "\/@NEVOTV",
+                    "channelId": "UCkaUg9b9LplVoJdx1JwwyOg",
+                    "title": "NevoMusic"
+                },
+                "badges": [
+                    "4K"
+                ],
+                "descriptionSnippet": "Subscribe: https:\/\/www.youtube.com\/nevotv?sub_confirmation=1 \u2022 Credits: Clipmaker: Doniyor Agzamov Music: Jahongir\u00a0...",
+                "isLiveNow": false,
+                "lengthSeconds": 202,
+                "movingThumbnails": [
+                    {
+                        "height": 180,
+                        "url": "https:\/\/i.ytimg.com\/an_webp\/eCrCyc9OS5g\/mqdefault_6s.webp?du=3000&sqp=CIjNnscG&rs=AOn4CLC5hfPt3wWbTuJZcemfTnskM5bIxw",
+                        "width": 320
+                    }
+                ],
+                "publishedTimeText": "2 years ago",
+                "stats": {
+                    "views": 7306524
+                },
+                "thumbnails": [
+                    {
+                        "height": 202,
+                        "url": "https:\/\/i.ytimg.com\/vi\/eCrCyc9OS5g\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD25UhHb-CDG2GDERZtvLnGGUrHEg",
+                        "width": 360
+                    },
+                    {
+                        "height": 404,
+                        "url": "https:\/\/i.ytimg.com\/vi\/eCrCyc9OS5g\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLATkENDMUaBmnJt2wG7IdNAVsHQVA",
+                        "width": 720
+                    }
+                ],
+                "title": "Jahongir Otajonov & ROCKET_A - Gaziga bos (Official Music Video)",
+                "videoId": "eCrCyc9OS5g"
+            }
+        },
+        {
+            "type": "video",
+            "video": {
+                "author": {
+                    "avatar": [
+                        {
+                            "height": 68,
+                            "url": "https:\/\/yt3.ggpht.com\/UH9dUnhbK7zQi87rK3asjlKiF21Sg7Zz9PmJAQMCSkWrWBX7nU5uCmF_Um6LpkGH8P8B4CIR=s68-c-k-c0x00ffffff-no-rj",
+                            "width": 68
+                        }
+                    ],
+                    "badges": [
+                        {
+                            "text": "Verified",
+                            "type": "VERIFIED_CHANNEL"
+                        }
+                    ],
+                    "canonicalBaseUrl": "\/@jahongirotajonov9412",
+                    "channelId": "UCOKxmgZymSblWjxC_ZiwBnQ",
+                    "title": "Jahongir Otajonov"
+                },
+                "badges": [],
+                "descriptionSnippet": null,
+                "isLiveNow": false,
+                "lengthSeconds": 184,
+                "movingThumbnails": [
+                    {
+                        "height": 180,
+                        "url": "https:\/\/i.ytimg.com\/an_webp\/wu6y6Y1sJzA\/mqdefault_6s.webp?du=3000&sqp=CIDKnscG&rs=AOn4CLDfEmVE99mejs66SuVF2NaP-8f6BA",
+                        "width": 320
+                    }
+                ],
+                "publishedTimeText": "6 years ago",
+                "stats": {
+                    "views": 50066273
+                },
+                "thumbnails": [
+                    {
+                        "height": 202,
+                        "url": "https:\/\/i.ytimg.com\/vi\/wu6y6Y1sJzA\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBleqPH235imvwTQGflhPJOdT7TIw",
+                        "width": 360
+                    },
+                    {
+                        "height": 404,
+                        "url": "https:\/\/i.ytimg.com\/vi\/wu6y6Y1sJzA\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBKCL7AhVEj-62LTSbxw4a7_2O4gw",
+                        "width": 720
+                    }
+                ],
+                "title": "Jahongir Otajonov - Qaddi baland | \u0416\u0430\u0445\u043e\u043d\u0433\u0438\u0440 \u041e\u0442\u0430\u0436\u043e\u043d\u043e\u0432 - \u049a\u0430\u0434\u0434\u0438 \u0431\u0430\u043b\u0430\u043d\u0434",
+                "videoId": "wu6y6Y1sJzA"
+            }
+        },
+        {
+            "type": "video",
+            "video": {
+                "author": {
+                    "avatar": [
+                        {
+                            "height": 68,
+                            "url": "https:\/\/yt3.ggpht.com\/lokZZp-Bse8aqjert0u5JyjI1CmQcYuETDV8XxuX3mAc2jzBZplRoT_wCWlRT4sOLTpgwsNXxhc=s68-c-k-c0x00ffffff-no-rj",
+                            "width": 68
+                        }
+                    ],
+                    "badges": [],
+                    "canonicalBaseUrl": "\/channel\/UC477Gk4q2WYMUIXNI4wVg7Q",
+                    "channelId": "UC477Gk4q2WYMUIXNI4wVg7Q",
+                    "title": "Jahongir Otajonov - Topic"
+                },
+                "badges": [],
+                "descriptionSnippet": "Provided to YouTube by AIR Music Arazlama \u00b7 Jahongir Otajonov Qaddi baland \u2117 2021 NEVO Music Released on: 2021-01-13\u00a0...",
+                "isLiveNow": false,
+                "lengthSeconds": 250,
+                "movingThumbnails": null,
+                "publishedTimeText": null,
+                "stats": {
+                    "views": 495742
+                },
+                "thumbnails": [
+                    {
+                        "height": 202,
+                        "url": "https:\/\/i.ytimg.com\/vi\/I8atcD7lS3I\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZA9bhByK5HJX65K881cctNPhoFA",
+                        "width": 360
+                    },
+                    {
+                        "height": 404,
+                        "url": "https:\/\/i.ytimg.com\/vi\/I8atcD7lS3I\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCpKFVaiHqMus3_YSKKQlBG_18UKQ",
+                        "width": 720
+                    }
+                ],
+                "title": "Arazlama",
+                "videoId": "I8atcD7lS3I"
+            }
+        },
+        {
+            "type": "video",
+            "video": {
+                "author": {
+                    "avatar": [
+                        {
+                            "height": 68,
+                            "url": "https:\/\/yt3.ggpht.com\/66ADa53tqmH4lPMZkt6T7M6lHBzJrshbO3XC03I91UcSt9c14lafbzuvIXvfwPR6JqbjG6Byng=s68-c-k-c0x00ffffff-no-rj",
+                            "width": 68
+                        }
+                    ],
+                    "badges": [
+                        {
+                            "text": "Verified",
+                            "type": "VERIFIED_CHANNEL"
+                        }
+                    ],
+                    "canonicalBaseUrl": "\/@August_Records",
+                    "channelId": "UCLDH5PQybznknMJZoaemehQ",
+                    "title": "August Records"
+                },
+                "badges": [
+                    "4K"
+                ],
+                "descriptionSnippet": "August Records YouTube kanaliga obuna bo'ling: https:\/\/youtube.com\/@August_Records?si=eaRSLDtc6w5yrp_8 Follow\u00a0...",
+                "isLiveNow": false,
+                "lengthSeconds": 223,
+                "movingThumbnails": [
+                    {
+                        "height": 180,
+                        "url": "https:\/\/i.ytimg.com\/an_webp\/D2_IRvuenwg\/mqdefault_6s.webp?du=3000&sqp=CIjOnscG&rs=AOn4CLB2BWhIPaD8zLDoK2BpqcWwFRSC4w",
+                        "width": 320
+                    }
+                ],
+                "publishedTimeText": "2 months ago",
+                "stats": {
+                    "views": 8017974
+                },
+                "thumbnails": [
+                    {
+                        "height": 202,
+                        "url": "https:\/\/i.ytimg.com\/vi\/D2_IRvuenwg\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDtawR7setOKXfUSehDr19OHVHhxg",
+                        "width": 360
+                    },
+                    {
+                        "height": 404,
+                        "url": "https:\/\/i.ytimg.com\/vi\/D2_IRvuenwg\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB1fz2uXCwMVztyAlI3CFCvzSaKzQ",
+                        "width": 720
+                    }
+                ],
+                "title": "G'aybulla Tursunov - Daydi (Official Music Video)",
+                "videoId": "D2_IRvuenwg"
+            }
+        },
+        {
+            "type": "video",
+            "video": {
+                "author": {
+                    "avatar": [
+                        {
+                            "height": 68,
+                            "url": "https:\/\/yt3.ggpht.com\/pOt7Gf2ZGcjSA-rWUVM9AT84_PUMFBAJ1mdXPls5JkBjAelKU2mVqcegeiEtt1JevpYF5f31HA=s68-c-k-c0x00ffffff-no-rj",
+                            "width": 68
+                        }
+                    ],
+                    "badges": [
+                        {
+                            "text": "Verified",
+                            "type": "VERIFIED_CHANNEL"
+                        }
+                    ],
+                    "canonicalBaseUrl": "\/@NEVOTV",
+                    "channelId": "UCkaUg9b9LplVoJdx1JwwyOg",
+                    "title": "NevoMusic"
+                },
+                "badges": [],
+                "descriptionSnippet": "\u041e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0439 \u0441\u0430\u0439\u0442: https:\/\/nevomusic.net\/ \u041f\u043e\u0434\u043f\u0438\u0448\u0438\u0441\u044c \u043d\u0430 \u043a\u0430\u043d\u0430\u043b http:\/\/bit.ly\/nevotv NEVO @ \u041e\u0434\u043d\u043e\u043a\u043b\u0430\u0441\u0441\u043d\u0438\u043a\u0438\u00a0...",
+                "isLiveNow": false,
+                "lengthSeconds": 263,
+                "movingThumbnails": [
+                    {
+                        "height": 180,
+                        "url": "https:\/\/i.ytimg.com\/an_webp\/VYfLPuVm-Y8\/mqdefault_6s.webp?du=3000&sqp=CNXenscG&rs=AOn4CLBBWR_pHy6BRu1GJA8kxPIAsmHrKw",
+                        "width": 320
+                    }
+                ],
+                "publishedTimeText": "3 years ago",
+                "stats": {
+                    "views": 12517227
+                },
+                "thumbnails": [
+                    {
+                        "height": 202,
+                        "url": "https:\/\/i.ytimg.com\/vi\/VYfLPuVm-Y8\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBL8zMz7-MqlMmltqErkYHUGsoRaw",
+                        "width": 360
+                    },
+                    {
+                        "height": 404,
+                        "url": "https:\/\/i.ytimg.com\/vi\/VYfLPuVm-Y8\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCCiwi6_hme5OxUp7_uaVnly71Tog",
+                        "width": 720
+                    }
+                ],
+                "title": "Tohir Sodiqov - Sog'indim (audio)",
+                "videoId": "VYfLPuVm-Y8"
             }
         },
         {
@@ -902,7 +1001,7 @@
                 ],
                 "publishedTimeText": "6 months ago",
                 "stats": {
-                    "views": 9745930
+                    "views": 9751791
                 },
                 "thumbnails": [
                     {
@@ -927,150 +1026,38 @@
                     "avatar": [
                         {
                             "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/RgaUkLdAueTinVyeRN95_WNLohSq-mv2oViq-WefY4EjdGnQ5zlVHJgRswVreGbjgS3iIMRkyg=s68-c-k-c0x00ffffff-no-rj",
-                            "width": 68
-                        }
-                    ],
-                    "badges": [
-                        {
-                            "text": "Verified",
-                            "type": "VERIFIED_CHANNEL"
-                        }
-                    ],
-                    "canonicalBaseUrl": "\/@RizaNovaUZ",
-                    "channelId": "UCDPnSqLmYqHadD6VkrRiarg",
-                    "title": "RizaNovaUZ"
-                },
-                "badges": [
-                    "4K"
-                ],
-                "descriptionSnippet": "RizaNova ilovasini yuklab oling @ https:\/\/rizanova.uz\/apps Obuna bo'ling @ https:\/\/www.youtube.com\/RizaNovaUZ\u200b\u200b\u200b\u00a0...",
-                "isLiveNow": false,
-                "lengthSeconds": 221,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/ybygfdPfUwI\/mqdefault_6s.webp?du=3000&sqp=CIyknscG&rs=AOn4CLC6Kfd25K0XG-rog-XVuuT5RdZSKA",
-                        "width": 320
-                    }
-                ],
-                "publishedTimeText": "6 years ago",
-                "stats": {
-                    "views": 46139334
-                },
-                "thumbnails": [
-                    {
-                        "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/ybygfdPfUwI\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCuDbcF1T-uNhEA8XgZCj-Dt7kb7w",
-                        "width": 360
-                    },
-                    {
-                        "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/ybygfdPfUwI\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCuvW1LQ2iXlFwU_nHLYGPr92D6JA",
-                        "width": 720
-                    }
-                ],
-                "title": "Shahzoda - Sog'inib | \u0428\u0430\u0445\u0437\u043e\u0434\u0430 - \u0421\u043e\u0433\u0438\u043d\u0438\u0431",
-                "videoId": "ybygfdPfUwI"
-            }
-        },
-        {
-            "type": "video",
-            "video": {
-                "author": {
-                    "avatar": [
-                        {
-                            "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/ytc\/AIdro_m0cgXW7lpCPxy8meYnK8TVfbizHo2P79qtsKYjAt5FvA=s68-c-k-c0x00ffffff-no-rj",
+                            "url": "https:\/\/yt3.ggpht.com\/ytc\/AIdro_nlojL6lScV7wHKCTI0dMmhH2z0ku1enW3nWS5L2o4nig=s68-c-k-c0x00ffffff-no-rj",
                             "width": 68
                         }
                     ],
                     "badges": [],
-                    "canonicalBaseUrl": "\/@NasibaAbdullaevaOfficial",
-                    "channelId": "UCaME37EQiZMUqOds34fUGeg",
-                    "title": "Nasiba Abdullaeva"
+                    "canonicalBaseUrl": "\/@uzbekmusic379",
+                    "channelId": "UCzu-LmkMfPhg_wCmIY6c-Vw",
+                    "title": "Uzbek Music"
                 },
                 "badges": [],
-                "descriptionSnippet": "Mus. Abdulaziz Imamov So'z Zaliliy. Manager: +998903214155 Dilorom Safaeva Follow us: Official website:\u00a0...",
+                "descriptionSnippet": "Video Upload powered by https:\/\/www.TunesToTube.com.",
                 "isLiveNow": false,
-                "lengthSeconds": 219,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/PGibRQV9wN0\/mqdefault_6s.webp?du=3000&sqp=COyKnscG&rs=AOn4CLD2pVgG1_cqlpmkqZsrAN3OtfPOdQ",
-                        "width": 320
-                    }
-                ],
-                "publishedTimeText": "5 years ago",
-                "stats": {
-                    "views": 3694029
-                },
-                "thumbnails": [
-                    {
-                        "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/PGibRQV9wN0\/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIEcoUjAP&rs=AOn4CLDTZrApI_UFTypl-rIvdiCw71In_A",
-                        "width": 360
-                    },
-                    {
-                        "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/PGibRQV9wN0\/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIEcoUjAP&rs=AOn4CLAEdzypFR4Z2jDAHRIIAUogptDhbw",
-                        "width": 720
-                    }
-                ],
-                "title": "Nasiba Abdullaeva - Bari gal",
-                "videoId": "PGibRQV9wN0"
-            }
-        },
-        {
-            "type": "video",
-            "video": {
-                "author": {
-                    "avatar": [
-                        {
-                            "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/CRzlNNvj5Ex3XMMQnPIkiwhsaYtqh_qnZ13-rObqyMyytREXChTUMDswNuV7zGBUY-t6GiMuj3M=s88-c-k-c0x00ffffff-no-rj",
-                            "width": 68
-                        }
-                    ],
-                    "badges": [
-                        {
-                            "text": "Official Artist Channel",
-                            "type": "AUDIO_BADGE"
-                        }
-                    ],
-                    "canonicalBaseUrl": null,
-                    "channelId": "UCrwGAQfaJhRapPETC-la2pQ",
-                    "title": "Yulduz Usmanova"
-                },
-                "badges": [],
-                "descriptionSnippet": "Yulduz Usmonova - Ko'ngil | \u042e\u043b\u0434\u0443\u0437 \u0423\u0441\u043c\u043e\u043d\u043e\u0432\u0430 - \u041a\u045e\u043d\u0433\u0438\u043b \u041e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0439 \u0441\u0430\u0439\u0442 \/https:\/\/www.yulduz.uz \u041e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0435 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b \u0432\u00a0...",
-                "isLiveNow": false,
-                "lengthSeconds": 259,
-                "movingThumbnails": [
-                    {
-                        "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/emy-7aeC52Q\/mqdefault_6s.webp?du=3000&sqp=CKCqnscG&rs=AOn4CLDJ2SGc8BU0wadjQP91JCkSeHdZag",
-                        "width": 320
-                    }
-                ],
+                "lengthSeconds": 255,
+                "movingThumbnails": null,
                 "publishedTimeText": "8 years ago",
                 "stats": {
-                    "views": 45040608
+                    "views": 1211377
                 },
                 "thumbnails": [
                     {
                         "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/emy-7aeC52Q\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAM1PUgwiGRDGQvxYkQDuv7LTCM3w",
+                        "url": "https:\/\/i.ytimg.com\/vi\/oEtFnzk67_A\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAquF5NlQWmtUGRhGyX1evZlLf7Gw",
                         "width": 360
                     },
                     {
                         "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/emy-7aeC52Q\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCVNJW-Oq6eql9jLXMRyh3E-cKBNA",
+                        "url": "https:\/\/i.ytimg.com\/vi\/oEtFnzk67_A\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCD_mlN5fJ33DfPVxWydFZd7F7xEQ",
                         "width": 720
                     }
                 ],
-                "title": "Yulduz Usmonova - Ko'ngil | \u042e\u043b\u0434\u0443\u0437 \u0423\u0441\u043c\u043e\u043d\u043e\u0432\u0430 - \u041a\u045e\u043d\u0433\u0438\u043b",
-                "videoId": "emy-7aeC52Q"
+                "title": "Jahongir Otajonov - Arazlamang",
+                "videoId": "oEtFnzk67_A"
             }
         },
         {
@@ -1080,7 +1067,7 @@
                     "avatar": [
                         {
                             "height": 68,
-                            "url": "https:\/\/yt3.ggpht.com\/La4_7Xdf_KiC-Pi-TosYxl9AQiCsl5dM2mBPyYwN2aqD3_dXEjrER85zz9VD9a433ERYtVitkw=s68-c-k-c0x00ffffff-no-rj",
+                            "url": "https:\/\/yt3.ggpht.com\/UH9dUnhbK7zQi87rK3asjlKiF21Sg7Zz9PmJAQMCSkWrWBX7nU5uCmF_Um6LpkGH8P8B4CIR=s68-c-k-c0x00ffffff-no-rj",
                             "width": 68
                         }
                     ],
@@ -1090,70 +1077,70 @@
                             "type": "VERIFIED_CHANNEL"
                         }
                     ],
-                    "canonicalBaseUrl": "\/@sevimlitv",
-                    "channelId": "UC647stBCZxmi6ua_4mZxr7g",
-                    "title": "Sevimli TV"
+                    "canonicalBaseUrl": "\/@jahongirotajonov9412",
+                    "channelId": "UCOKxmgZymSblWjxC_ZiwBnQ",
+                    "title": "Jahongir Otajonov"
                 },
                 "badges": [],
-                "descriptionSnippet": "Sevimli TV YouTube'da \u2013 hayotingizga rang-baranglik qo'shing! Seriallar, ko'rsatuvlar va eng qiziqarli lahzalar \u2013 hammasi siz\u00a0...",
+                "descriptionSnippet": null,
                 "isLiveNow": false,
-                "lengthSeconds": 196,
+                "lengthSeconds": 340,
                 "movingThumbnails": [
                     {
                         "height": 180,
-                        "url": "https:\/\/i.ytimg.com\/an_webp\/91akYiTpVY0\/mqdefault_6s.webp?du=3000&sqp=CJ-vnscG&rs=AOn4CLCgtMx4yxF_CKnKC9iVfyqxZnuyCQ",
+                        "url": "https:\/\/i.ytimg.com\/an_webp\/vESmCn_oPao\/mqdefault_6s.webp?du=3000&sqp=COClnscG&rs=AOn4CLCQLlW138-soe9emsnyZhHLOiD45g",
                         "width": 320
                     }
                 ],
-                "publishedTimeText": "3 years ago",
+                "publishedTimeText": "7 years ago",
                 "stats": {
-                    "views": 72606760
+                    "views": 11294437
                 },
                 "thumbnails": [
                     {
                         "height": 202,
-                        "url": "https:\/\/i.ytimg.com\/vi\/91akYiTpVY0\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDvLBPgdvAPi3H66vXRPekRhI91iQ",
+                        "url": "https:\/\/i.ytimg.com\/vi\/vESmCn_oPao\/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCwqo_Qe6LedbKeWHui08b2bMdhlg",
                         "width": 360
                     },
                     {
                         "height": 404,
-                        "url": "https:\/\/i.ytimg.com\/vi\/91akYiTpVY0\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6T5r7QS6lJutYei2cWen4Hcy7_w",
+                        "url": "https:\/\/i.ytimg.com\/vi\/vESmCn_oPao\/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAUReh2Bi2Qt5lnEz-IxErzJ-c3GA",
                         "width": 720
                     }
                 ],
-                "title": "YULDUZ USMONOVA \u2013 \u201cMUHABBAT\u201d",
-                "videoId": "91akYiTpVY0"
+                "title": "Jahongir Otajonov - Oq bulutlar | \u0416\u0430\u0445\u043e\u043d\u0433\u0438\u0440 \u041e\u0442\u0430\u0436\u043e\u043d\u043e\u0432 - \u041e\u043a \u0431\u0443\u043b\u0443\u0442\u043b\u0430\u0440",
+                "videoId": "vESmCn_oPao"
             }
         }
     ],
-    "cursorNext": "EsoDEg95dWxkdXogdXNtb25vdmEatgNTQlNDQVJoVlEzSjNSMEZSWm1GS2FGSmhjRkJGVkVNdGJHRXljRkdDQVJwU1JFVk5PVXBuVmtNdFNHZHVOVVpSTTBWaFZXZFBRMEl6VVlJQkMxcDNTMlZYVjI1NlpVVTBnZ0VMY2pOU2JITTFiRUZYUkRpQ0FRdDZSM1pRVTFGQlYwWnNkNElCQzNwSlZIUlJlRkIwZVRWQmdnRUxYM294TVhWdk4waHFTRENDQVF0M2FWaGhMWEoxZG1samE0SUJDMlExUW1OWGNHZG5OSFpyZ2dFTFpFOWhiVTVQVG1kQlJWV0NBUXRzYVZwWk1WTjBXVVJZV1lJQkMzSnBVVXBpU1haQ0xYaHJnZ0VMVTFKWFZuaE9abFpwU0dPQ0FRdExVRkJOU1MxQk4yZ3RZNElCQzJkWmVXZDBjR2d6U2tKQmdnRUxjUzA0TkUwMWJuSkhVV09DQVF0cmRFdEZTa2hNUkRCd2M0SUJDMjAyUkZreU1uSmZWSHBuZ2dFTFpXMTVMVGRoWlVNMU1sR0NBUXM1TVdGcldXbFVjRlpaTUxJQkJnb0VDQllRQXVvQkJBZ0JFQW8lM0QYgeDoGCILc2VhcmNoLWZlZWQ%3D",
+    "cursorNext": "Eq8DEghKYWhvbmdpchqiA1NCU0NBUXRNY0RKeWFVdzVUM2xEV1lJQkMzaDRSMmhIVVRWYWFtOWpnZ0VMTjAxS1RISldiamRQTkRDQ0FRdGZWME4yTWt4MlprZHhXWUlCQ3psMVkzSnBVMk5RWjJZNGdnRUxOMlZWVFhrNWFuVXRWVy1DQVJoVlEwOUxlRzFuV25sdFUySnNWMnA0UTE5YWFYZENibEdDQVF0alVFYzNTR2xOUm1SVVFZSUJDMlExVm5Gd1dWcHlVVFpSZ2dFTFExUnRhVEJDV2pCNFEyLUNBUXN3YmxwUGR5MXlTWEJ2UVlJQkMwOXhYMHBaYVMxWFgxOWpnZ0VMTVVoa2F6aFVaM1J3YTFtQ0FRc3hRbFp1UkV3MGJ6azRTWUlCQzNObVJUUkJlVUpWV0VGRmdnRUxaVU55UTNsak9VOVROV2VDQVF0M2RUWjVObGt4YzBwNlFZSUJDMGs0WVhSalJEZHNVek5KZ2dFTGIwVjBSbTU2YXpZM1gwR0NBUXQyUlZOdFEyNWZiMUJoYjdJQkJnb0VDQmNRQXVvQkJBZ0NFQlElM0QYgeDoGCILc2VhcmNoLWZlZWQ%3D",
     "didYouMean": null,
-    "estimatedResults": 932837,
+    "estimatedResults": 529264,
     "filterGroups": [
         {
             "filters": [
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJSUFRJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0lJQVElM0QlM0Q=",
                     "label": "Last hour",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJSUFnJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0lJQWclM0QlM0Q=",
                     "label": "Today",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJSUF3JTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0lJQXclM0QlM0Q=",
                     "label": "This week",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJSUJBJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0lJQkElM0QlM0Q=",
                     "label": "This month",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJSUJRJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0lJQlElM0QlM0Q=",
                     "label": "This year",
                     "selected": false
                 }
@@ -1163,22 +1150,22 @@
         {
             "filters": [
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJUUFRJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0lRQVElM0QlM0Q=",
                     "label": "Video",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJUUFnJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0lRQWclM0QlM0Q=",
                     "label": "Channel",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJUUF3JTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0lRQXclM0QlM0Q=",
                     "label": "Playlist",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJUUJBJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0lRQkElM0QlM0Q=",
                     "label": "Movie",
                     "selected": false
                 }
@@ -1188,17 +1175,17 @@
         {
             "filters": [
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJWUFRJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0lZQVElM0QlM0Q=",
                     "label": "Under 4 minutes",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJWUF3JTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0lZQXclM0QlM0Q=",
                     "label": "4 - 20 minutes",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJWUFnJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0lZQWclM0QlM0Q=",
                     "label": "Over 20 minutes",
                     "selected": false
                 }
@@ -1208,57 +1195,57 @@
         {
             "filters": [
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdKQUFRJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0pBQVElM0QlM0Q=",
                     "label": "Live",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdKd0FRJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0p3QVElM0QlM0Q=",
                     "label": "4K",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJZ0FRJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0lnQVElM0QlM0Q=",
                     "label": "HD",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJb0FRJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0lvQVElM0QlM0Q=",
                     "label": "Subtitles\/CC",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJd0FRJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0l3QVElM0QlM0Q=",
                     "label": "Creative Commons",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdKNEFRJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0o0QVElM0QlM0Q=",
                     "label": "360\u00b0",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdQUUFRRSUzRA==",
+                    "cursorSelect": "SmFob25naXImJiZFZ1BRQVFFJTNE",
                     "label": "VR180",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdJNEFRJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0k0QVElM0QlM0Q=",
                     "label": "3D",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdQSUFRRSUzRA==",
+                    "cursorSelect": "SmFob25naXImJiZFZ1BJQVFFJTNE",
                     "label": "HDR",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdPNEFRRSUzRA==",
+                    "cursorSelect": "SmFob25naXImJiZFZ080QVFFJTNE",
                     "label": "Location",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmRWdKSUFRJTNEJTNE",
+                    "cursorSelect": "SmFob25naXImJiZFZ0pJQVElM0QlM0Q=",
                     "label": "Purchased",
                     "selected": false
                 }
@@ -1273,17 +1260,17 @@
                     "selected": true
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmQ0FJJTNE",
+                    "cursorSelect": "SmFob25naXImJiZDQUklM0Q=",
                     "label": "Upload date",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmQ0FNJTNE",
+                    "cursorSelect": "SmFob25naXImJiZDQU0lM0Q=",
                     "label": "View count",
                     "selected": false
                 },
                 {
-                    "cursorSelect": "eXVsZHV6IHVzbW9ub3ZhJiYmQ0FFJTNE",
+                    "cursorSelect": "SmFob25naXImJiZDQUUlM0Q=",
                     "label": "Rating",
                     "selected": false
                 }
@@ -1292,20 +1279,20 @@
         }
     ],
     "refinements": [
-        "yulduz usmonova seni severdim",
-        "yulduz usmonova xasta bo'lma",
-        "yulduz usmonova dadajon",
-        "yulduz usmonova shabnam surayo",
-        "yulduz usmonova telbadek sevaman",
-        "yulduz usmonova daydi yorim",
-        "yulduz usmonova qirolichaman",
-        "yulduz usmonova tojikcha",
-        "yulduz usmonova sanamgina",
-        "yulduz usmonova yalli yalli",
-        "yulduz usmonova konsert 2024",
-        "yulduz usmonova taralli dalli",
-        "yulduz usmonova o'zbekiston",
-        "yulduz usmonova uchrasharmidik",
-        "yulduz usmonova muhabbatning"
+        "jahongir otajonov konsert",
+        "jahongir otajonov ayol makri",
+        "jahongir otajonov yolg'onchi yor",
+        "jahongir otajonov sog'indim yomon",
+        "jahongir otajonov uchrashmadik",
+        "jahongir otajonov oq bulut",
+        "jahongir otajonov qaddi baland",
+        "jahongir otajonov toyda",
+        "jahongir otajonov chaqasan",
+        "musiqalar 2024",
+        "jahongir otajonov konsert 2014",
+        "turkcha qo'shiqlar",
+        "dunyo shunchalar qimmatmi",
+        "jahongir latipov",
+        "jaxong\u0131r ortiqxo'jayev"
     ]
 }
