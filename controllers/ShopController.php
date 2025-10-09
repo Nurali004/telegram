@@ -47,7 +47,7 @@ class ShopController extends Controller
     public function start()
     {
 
-//    $rs =   $this->telegram->setWebhook(['url'=>'https://18dd200018b7.ngrok-free.app/shop/start']);
+//    $rs =   $this->telegram->setWebhook(['url'=>'https://0f2c496787d9.ngrok-free.app/shop/start']);
 //    var_dump($rs);
 //       die();
 
@@ -273,12 +273,12 @@ class ShopController extends Controller
 
     public function showMusicResult($page = 1){
 
-        $this->getKey('search');
+       $search = $this->getKey('search');
 
         $curl = curl_init();
 
         curl_setopt_array($curl, [
-            CURLOPT_URL => "https://youtube138.p.rapidapi.com/search/?q={$this->text}&hl=en&gl=US",
+            CURLOPT_URL => "https://youtube138.p.rapidapi.com/search/?q={$search}&hl=en&gl=US",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
@@ -353,8 +353,10 @@ class ShopController extends Controller
                 'callback_data' => "page_" . ($page + 1)
             ]);
         }
-        if (!empty($buttons)) $reply_markup->row($buttons);
 
+        if (!empty($buttons)) {
+            $reply_markup->row($buttons);
+        }
 
         $this->telegram->sendMessage([
             'chat_id' => $this->chat_id,
