@@ -54,171 +54,184 @@ class ShopController extends Controller
 
         $this->getDatas();
 
+        if (!is_null($this->callback_data)) {
+            if (strpos($this->callback_data, 'song_') !== false) {
+                $this->downloadMusicPage();
+            }elseif(strpos($this->callback_data, 'page_') !== false){
+                $page = (int)str_replace('page_', '', $this->callback_data);
+                $this->showMusicResult($page);
 
-        switch ($this->text) {
-            case '/start':
-                $this->showHomePage();
-                break;
-            case '/about':
-                $this->showInlineKeyboard();
-                break;
-            case Text::ABOUT_TEXT:
-                break;
-            case Text::MY_ORDER:
-                break;
-            case Text::SEARCH_TEXT:
-                break;
+            }else{
+                $this->showCallBackdata();
+            }
 
-            case Text::KATALOG_TEXT:
-                break;
-            case Text::MUSIC_TEXT:
-                $this->showMusicPage();
-                break;
-            case Text::VIDEO_TEXT:
-                $this->showVideoPage();
-                break;
+        }else{
+            switch ($this->text) {
+                case '/start':
+                    $this->showHomePage();
+                    break;
+                case '/about':
+                    $this->showInlineKeyboard();
+                    break;
+                case Text::ABOUT_TEXT:
+                    break;
+                case Text::MY_ORDER:
+                    break;
+                case Text::SEARCH_TEXT:
+                    break;
 
-            case Text::ADMIN_PANEL:
-                $this->showAdminPanelPage();
-                break;
-            default:
-                switch ($this->getPage()) {
-                    case Page::ADMIN_PANEL_PAGE:
-                        switch ($this->text) {
-                            case Text::BACK_TEXT:
+                case Text::KATALOG_TEXT:
+                    break;
+                case Text::MUSIC_TEXT:
+                    $this->showMusicPage();
+                    break;
+                case Text::VIDEO_TEXT:
+                    $this->showVideoPage();
+                    break;
+
+                case Text::ADMIN_PANEL:
+                    $this->showAdminPanelPage();
+                    break;
+                default:
+                    switch ($this->getPage()) {
+                        case Page::ADMIN_PANEL_PAGE:
+                            switch ($this->text) {
+                                case Text::BACK_TEXT:
+                                    $this->showHomePage();
+                                    break;
+                                case Text::ADD_PRODUCT:
+                                    $this->showAddProductNamePage();
+                                    break;
+                                case Text::EDIT_PRODUCT:
+                                    //  $this->showEditProductPage();
+                                    break;
+                                case Text::ORDER_PRODUCTS:
+                                    //   $this->showOrdersPage();
+                                    break;
+                                case Text::SETTINGS:
+                                    //   $this->showSettingsProductPage();
+                                    break;
+                                case Text::ADD_CATEGORY:
+                                    $this->showAddCategoryNamePage();
+                                    break;
+
+
+                            }
+                            break;
+                        case Page::INPUT_PRODUCT_NAME_PAGE:
+                            switch ($this->text) {
+                                case Text::BACK_TEXT:
+                                    $this->showAdminPanelPage();
+                                    break;
+                                default:
+                                    $this->setKey('productName', $this->text);
+                                    $this->showAddProductPricePage();
+                                    break;
+                            }
+                            break;
+                        case Page::INPUT_PRODUCT_PRICE_PAGE:
+                            switch ($this->text) {
+                                case Text::BACK_TEXT:
+                                    $this->showAddProductNamePage();
+                                    break;
+                                default:
+                                    $this->setKey('productPrice', $this->text);
+                                    $this->showAddProductImagePage();
+                                    break;
+                            }
+                            break;
+                        case Page::INPUT_PRODUCT_IMAGE_PAGE:
+                            switch ($this->text) {
+                                case Text::BACK_TEXT:
+                                    $this->showAddProductpricePage();
+                                    break;
+                                default:
+                                    $this->showAddProductImageActions();
+
+                                    break;
+                            }
+                            break;
+                        case Page::INPUT_PRODUCT_DESC_PAGE:
+                            switch ($this->text) {
+                                case Text::BACK_TEXT:
+                                    $this->showAddProductImagePage();
+                                    break;
+                                default:
+
+                                    $this->setKey('productDesc', $this->text);
+                                    $product = new Product();
+
+                                    $data = [
+                                        'category_id' => 1,
+                                        'name' => $this->getKey('productName'),
+                                        'price' => $this->getKey('productPrice'),
+                                        'image' => $this->getKey('productImage'),
+                                        'description' => $this->text,
+                                        'in_stock' => 1
+                                    ];
+                                    $product->save($data);
+                                    $this->sendMessage(Text::PRODUCT_INSERTED_TEXT);
+                                    $this->showHomePage();
+                                    break;
+                            }
+                            break;
+                        case Page::INPUT_CATEGORY_NAME_PAGE:
+                            switch ($this->text) {
+                                case Text::BACK_TEXT:
+                                    $this->showAdminPanelPage();
+                                    break;
+                                default:
+
+                                    $this->setKey('CategoryName', $this->text);
+                                    $category = new Category();
+                                    $data = [
+                                        'name' => $this->getKey('CategoryName'),
+                                    ];
+                                    $category->save($data);
+                                    $this->sendMessage(Text::CATEGORY_INSERTED_TEXT);
+                                    $this->showHomePage();
+                                    break;
+                            }
+                            break;
+
+                        case Page::MUSIC_PAGE:
+                            switch ($this->text){
+                                case Text::BACK_TEXT:
+                                    $this->showHomePage();
+                                    break;
+                                case Text::MUSIC_SEARCH_NAME:
+                                    $this->showMusicSearchPage();
+                                    break;
+                            }
+                            break;
+                        case Page::VIDEO_PAGE:
+                            if ($this->text == Text::BACK_TEXT) {
                                 $this->showHomePage();
-                                break;
-                            case Text::ADD_PRODUCT:
-                                $this->showAddProductNamePage();
-                                break;
-                            case Text::EDIT_PRODUCT:
-                                //  $this->showEditProductPage();
-                                break;
-                            case Text::ORDER_PRODUCTS:
-                                //   $this->showOrdersPage();
-                                break;
-                            case Text::SETTINGS:
-                                //   $this->showSettingsProductPage();
-                                break;
-                            case Text::ADD_CATEGORY:
-                                $this->showAddCategoryNamePage();
-                                break;
+                            } else {
+                                $this->showVideo();
+                            }
+                            break;
+                        case  Page::SEARCH_PAGE:
+                            switch ($this->text) {
+                                case Text::BACK_TEXT:
+                                    $this->showMusicPage();
+                                    break;
+                                default:
+                                    $this->setKey('search', $this->text);
+                                    $this->showMusicResult();
+                                    break;
+                            }
+                            break;
+
+                    }
+                    break;
 
 
-                        }
-                        break;
-                    case Page::INPUT_PRODUCT_NAME_PAGE:
-                        switch ($this->text) {
-                            case Text::BACK_TEXT:
-                                $this->showAdminPanelPage();
-                                break;
-                            default:
-                                $this->setKey('productName', $this->text);
-                                $this->showAddProductPricePage();
-                                break;
-                        }
-                        break;
-                    case Page::INPUT_PRODUCT_PRICE_PAGE:
-                        switch ($this->text) {
-                            case Text::BACK_TEXT:
-                                $this->showAddProductNamePage();
-                                break;
-                            default:
-                                $this->setKey('productPrice', $this->text);
-                                $this->showAddProductImagePage();
-                                break;
-                        }
-                        break;
-                    case Page::INPUT_PRODUCT_IMAGE_PAGE:
-                        switch ($this->text) {
-                            case Text::BACK_TEXT:
-                                $this->showAddProductpricePage();
-                                break;
-                            default:
-                                $this->showAddProductImageActions();
-
-                                break;
-                        }
-                        break;
-                    case Page::INPUT_PRODUCT_DESC_PAGE:
-                        switch ($this->text) {
-                            case Text::BACK_TEXT:
-                                $this->showAddProductImagePage();
-                                break;
-                            default:
-
-                                $this->setKey('productDesc', $this->text);
-                                $product = new Product();
-
-
-                                $data = [
-                                    'category_id' => 1,
-                                    'name' => $this->getKey('productName'),
-                                    'price' => $this->getKey('productPrice'),
-                                    'image' => $this->getKey('productImage'),
-                                    'description' => $this->text,
-                                    'in_stock' => 1
-                                ];
-                                $product->save($data);
-                                $this->sendMessage(Text::PRODUCT_INSERTED_TEXT);
-                                $this->showHomePage();
-                                break;
-                        }
-                        break;
-                    case Page::INPUT_CATEGORY_NAME_PAGE:
-                        switch ($this->text) {
-                            case Text::BACK_TEXT:
-                                $this->showAdminPanelPage();
-                                break;
-                            default:
-
-                                $this->setKey('CategoryName', $this->text);
-                                $category = new Category();
-                                $data = [
-                                    'name' => $this->getKey('CategoryName'),
-                                ];
-                                $category->save($data);
-                                $this->sendMessage(Text::CATEGORY_INSERTED_TEXT);
-                                $this->showHomePage();
-                                break;
-                        }
-                        break;
-
-                    case Page::MUSIC_PAGE:
-                        switch ($this->text){
-                            case Text::BACK_TEXT:
-                                $this->showMusicPage();
-                                break;
-                            case Text::MUSIC_SEARCH_NAME:
-                                $this->showMusicSearchPage();
-                                break;
-                        }
-                        break;
-                    case Page::VIDEO_PAGE:
-                        if ($this->text == Text::BACK_TEXT) {
-                            $this->showHomePage();
-                        } else {
-                            $this->showVideo();
-                        }
-                        break;
-                    case  Page::SEARCH_PAGE:
-                        switch ($this->text) {
-                            case Text::BACK_TEXT:
-                                $this->showMusicPage();
-                                break;
-                            default:
-                                $this->setKey('search', $this->text);
-                                $this->showMusicResult();
-                                break;
-                        }
-                        break;
-
-
-                }
-                break;
-
-
+            }
         }
+
+
+
 
     }
 
@@ -249,7 +262,7 @@ class ShopController extends Controller
 
     public function showMusicSearchPage(){
         $this->setPage(Page::SEARCH_PAGE);
-        $text = "Xonanda ismini kiriting!";
+        $text = "Musiqa nomini kiriting!";
         $reply_markup = Keyboard::make()
             ->setResizeKeyboard(true)
             ->row([
@@ -258,15 +271,14 @@ class ShopController extends Controller
         $this->sendMessageWithKeyboard($text, $reply_markup);
     }
 
-    public function showMusicResult(){
+    public function showMusicResult($page = 1){
 
         $this->getKey('search');
 
         $curl = curl_init();
-        $url = "https://youtube138.p.rapidapi.com/search/?q={$this->text}&hl=en&gl=US";
 
         curl_setopt_array($curl, [
-            CURLOPT_URL => $url,
+            CURLOPT_URL => "https://youtube138.p.rapidapi.com/search/?q={$this->text}&hl=en&gl=US",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
@@ -275,11 +287,12 @@ class ShopController extends Controller
             CURLOPT_CUSTOMREQUEST => "GET",
             CURLOPT_HTTPHEADER => [
                 "x-rapidapi-host: youtube138.p.rapidapi.com",
-                "x-rapidapi-key: 68482e1a48mshdcf8eba4ab516cdp139badjsna79ca4ffc08d"
+                "x-rapidapi-key: c65ee05e90msha747563874734c6p1ed25djsne8bce8ddb241"
             ],
         ]);
 
         $natija = curl_exec($curl);
+
 
         curl_close($curl);
 
@@ -292,27 +305,56 @@ class ShopController extends Controller
             return;
         }
 
-        $message_text = "🔎 Qidiruv natijalari:\n\n";
-
-        $reply_markup = Keyboard::make()
-            ->inline();
-
-        foreach ($data['contents'] as $index => $item) {
+        $videos = [];
+        foreach ($data['contents'] as $item) {
             if (!isset($item['video'])) continue;
+            $videos[] = [
+                'id' => $item['video']['videoId'] ?? null,
+                'title' => $item['video']['title'] ?? 'No title',
+            ];
 
-            $num = $index + 1;
-            $videoId = $item['video']['videoId'] ?? null;
-            $title = $item['video']['title'] ?? null;
+        }
 
-            $message_text .= $num . ". " . $title . "\n";
+        $limit = 9;
+        $total = count($videos);
+        $total_pages = ceil($total / $limit);
 
+        if ($page > $total_pages) $page = $total_pages;
+
+        $offset = ($page - 1) * $limit;
+        $page_items = array_slice($videos, $offset, $limit);
+
+        $message_text = "🎵 Natijalar:\n\n";
+
+        $reply_markup = Keyboard::make()->inline();
+
+        foreach ($page_items as $index => $song) {
+            $num = $offset + $index + 1;
+            $title = $song['title'];
+            $message_text .= "{$num}. {$title}\n";
             $reply_markup->row([
                 Keyboard::inlineButton([
-                    'text' => (string)$num,
-                    'callback_data' => "song_" . $videoId
+                    'text' => "🎧 {$num}",
+                    'callback_data' => "song_" . $song['id']
                 ])
             ]);
         }
+
+        $buttons = [];
+        if ($page > 1) {
+            $buttons[] = Keyboard::inlineButton([
+                'text' => '⬅️ Oldingi',
+                'callback_data' => "page_" . ($page - 1)
+            ]);
+        }
+        if ($page < $total_pages) {
+            $buttons[] = Keyboard::inlineButton([
+                'text' => '➡️ Keyingi',
+                'callback_data' => "page_" . ($page + 1)
+            ]);
+        }
+        if (!empty($buttons)) $reply_markup->row($buttons);
+
 
         $this->telegram->sendMessage([
             'chat_id' => $this->chat_id,
@@ -329,7 +371,6 @@ class ShopController extends Controller
 
         if (strpos($download, 'song_') === 0) {
             $video_id = str_replace('song_', '', $download);
-
 
 
             $curl = curl_init();
@@ -363,18 +404,27 @@ class ShopController extends Controller
 
                 ]);
 
+//                $this->telegram->editMessageText([
+//                    'chat_id' => $this->chat_id,
+//                    'message_id' => $this->message_id,
+//                    'text' => "🎵 Qo‘shiq yuklanmoqda",
+//                ]);
+
+
                 $this->telegram->sendAudio([
                     'chat_id' => $this->chat_id,
                     'audio' => InputFile::create($song['link']),
                     'caption' => $song['title']
                 ]);
+
+
             }else{
                 $this->sendMessage("Qo'shiqni yuklab bo'lmadi");
             }
 
 
         }
-        
+
     }
 
     public function showVideoPage()
@@ -552,7 +602,6 @@ class ShopController extends Controller
         }
 
 
-        
     }
 
     public function showInlineKeyboard()
@@ -612,6 +661,7 @@ class ShopController extends Controller
                     Keyboard::inlineButton([
                         'text' => $video['quality'],
                         'callback_data' => json_encode([
+                            'type' => 'video',
                             'quality' => $video['quality'],
                             'video_id' => $id,
                         ])
@@ -947,14 +997,6 @@ class ShopController extends Controller
             $this->callback_data = $callback_query->get('data');
             $this->chat_id = $callback_query->getMessage()->getChat()->getId();
             $this->message_id = $callback_query->getMessage()->getMessageId();
-
-            if (strpos($this->callback_data, 'song_') !== false) {
-                $this->downloadMusicPage();
-            }else{
-                $this->showCallBackdata();
-            }
-
-            exit();
 
         } else {
 

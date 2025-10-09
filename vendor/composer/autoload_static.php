@@ -54,6 +54,7 @@ class ComposerStaticInit00a4348b1bce0a1545a9e8c17e1dac05
         'L' => 
         array (
             'League\\Event\\' => 13,
+            'LArtie\\TelegramBotPagination\\' => 29,
         ),
         'I' => 
         array (
@@ -142,6 +143,10 @@ class ComposerStaticInit00a4348b1bce0a1545a9e8c17e1dac05
         'League\\Event\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/event/src',
+        ),
+        'LArtie\\TelegramBotPagination\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lartie/telegram-bot-pagination/src',
         ),
         'Illuminate\\Support\\' => 
         array (

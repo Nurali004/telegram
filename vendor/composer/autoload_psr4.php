@@ -22,6 +22,7 @@ return array(
     'Psr\\Clock\\' => array($vendorDir . '/psr/clock/src'),
     'Nurali\\Mvc\\' => array($baseDir . '/src'),
     'League\\Event\\' => array($vendorDir . '/league/event/src'),
+    'LArtie\\TelegramBotPagination\\' => array($vendorDir . '/lartie/telegram-bot-pagination/src'),
     'Illuminate\\Support\\' => array($vendorDir . '/illuminate/support', $vendorDir . '/illuminate/collections', $vendorDir . '/illuminate/macroable', $vendorDir . '/illuminate/conditionable'),
     'Illuminate\\Contracts\\' => array($vendorDir . '/illuminate/contracts'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),

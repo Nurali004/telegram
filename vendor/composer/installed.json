@@ -867,6 +867,63 @@
             "install-path": "../irazasyed/telegram-bot-sdk"
         },
         {
+            "name": "lartie/telegram-bot-pagination",
+            "version": "v1.0.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lartie/Telegram-Bot-Pagination.git",
+                "reference": "5104eef7a21cea1e48d810f020f73d8a90280312"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lartie/Telegram-Bot-Pagination/zipball/5104eef7a21cea1e48d810f020f73d8a90280312",
+                "reference": "5104eef7a21cea1e48d810f020f73d8a90280312",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpspec/prophecy": "^1.5",
+                "phpunit/phpunit": "^4.8 || ^5.0"
+            },
+            "time": "2016-11-22T15:10:04+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "LArtie\\TelegramBotPagination\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Artie",
+                    "email": "log.wil.log@gmail.com",
+                    "homepage": "https://github.com/lartie"
+                }
+            ],
+            "description": "Telegram Bot Pagination ",
+            "homepage": "https://github.com/lartie/telegram-bot-pagination",
+            "keywords": [
+                "laravel",
+                "pagination",
+                "telegram",
+                "telegram api",
+                "telegram bot",
+                "telegram-callback"
+            ],
+            "support": {
+                "issues": "https://github.com/lartie/Telegram-Bot-Pagination/issues",
+                "source": "https://github.com/lartie/Telegram-Bot-Pagination/tree/master"
+            },
+            "install-path": "../lartie/telegram-bot-pagination"
+        },
+        {
             "name": "league/event",
             "version": "3.0.3",
             "version_normalized": "3.0.3.0",

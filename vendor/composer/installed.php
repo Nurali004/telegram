@@ -3,7 +3,7 @@
         'name' => 'nurali/mvc',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'c0126a0c928d67f1ada1a63afeb2472f5a42110c',
+        'reference' => '476ab4c6bda44b8df6622cffdc7f1b55b6fa654c',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -109,6 +109,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'lartie/telegram-bot-pagination' => array(
+            'pretty_version' => 'v1.0.0',
+            'version' => '1.0.0.0',
+            'reference' => '5104eef7a21cea1e48d810f020f73d8a90280312',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../lartie/telegram-bot-pagination',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'league/event' => array(
             'pretty_version' => '3.0.3',
             'version' => '3.0.3.0',
@@ -130,7 +139,7 @@
         'nurali/mvc' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'c0126a0c928d67f1ada1a63afeb2472f5a42110c',
+            'reference' => '476ab4c6bda44b8df6622cffdc7f1b55b6fa654c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
