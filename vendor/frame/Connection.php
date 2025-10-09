@@ -9,7 +9,7 @@ class Connection{
   private $host = 'localhost';
   private $user = 'root';
   private $pass = 'root';
-  private $name = 'bot_shop';
+  private $name = 'news';
 
     public function __construct()
     {
