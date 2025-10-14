@@ -48,6 +48,15 @@ class ShopController extends Controller
     public function start()
     {
 
+        $get = $_GET['/shop/start'] ?? null;
+
+        if ($get !== null) {
+            $this->enable();
+        } else {
+            $this->disable();
+        }
+
+
 
         $this->getDatas();
 
@@ -1180,12 +1189,8 @@ class ShopController extends Controller
         $result = json_decode($response, true);
 
         echo "<pre>";
-        print_r($result); // Telegram javobini ko‘rish
+        print_r($result);
         echo "</pre>";
-
-        if (!empty($result['ok'])) {
-            echo "✅ Webhook yoqildi";
-        }
 
         
     }
