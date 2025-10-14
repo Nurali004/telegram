@@ -47,8 +47,6 @@ class ShopController extends Controller
 
     public function start()
     {
-        $this->enable();
-        $this->disable();
 
 
         $this->getDatas();
@@ -1180,6 +1178,10 @@ class ShopController extends Controller
         $apiUrl = "https://api.telegram.org/bot{$this->bot_token}/setWebhook?url={$webHook}";
         $response = file_get_contents($apiUrl);
         $result = json_decode($response, true);
+
+        echo "<pre>";
+        print_r($result); // Telegram javobini ko‘rish
+        echo "</pre>";
 
         if (!empty($result['ok'])) {
             echo "✅ Webhook yoqildi";
