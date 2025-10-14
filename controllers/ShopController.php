@@ -48,13 +48,7 @@ class ShopController extends Controller
     public function start()
     {
 
-        $get = $_GET['https://2.nugaev.uz/shop/start'] ?? null;
 
-        if ($get !== null) {
-            $this->enable();
-        } else {
-            $this->disable();
-        }
 
 
 
