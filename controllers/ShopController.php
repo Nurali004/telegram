@@ -35,6 +35,7 @@ class ShopController extends Controller
     public $callback_data;
 
     public $text;
+    public $bot_token = "8297930277:AAEeX9D0hmwxJdlDu7wtVXQ0dpHGzqrbCAw";
 
     public function __construct()
     {
@@ -1175,22 +1176,27 @@ class ShopController extends Controller
 
     public function enable()
     {
-        $url = 'https://2.nugaev.uz/shop/start';
-        $result = $this->telegram->setWebhook(['url' => $url]);
-        echo "<h3>Webhook yoqildi ✅</h3>";
-        echo "<pre>";
-        var_dump($result);
-        echo "</pre>";
+        $webHook = 'https://2.nugaev.uz/shop/start';
+        $apiUrl = "https://api.telegram.org/bot{$this->bot_token}/setWebhook?url={$webHook}";
+        $response = file_get_contents($apiUrl);
+        $result = json_decode($response, true);
+
+        if (!empty($result['ok'])) {
+            echo "✅ Webhook yoqildi";
+        }
+
         
     }
 
     public function disable()
     {
-        $result = $this->telegram->removeWebhook();
-        echo "<h3>Webhook o‘chirildi </h3>";
-        echo "<pre>";
-        var_dump($result);
-        echo "</pre>";
+        $apiUrl = "https://api.telegram.org/bot{$this->bot_token}/deleteWebhook";
+        $response = file_get_contents($apiUrl);
+        $result = json_decode($response, true);
+
+        if (!empty($result['ok']) && $result['ok'] === true) {
+            echo "Webhook o‘chirildi";
+        }
         
     }
 
