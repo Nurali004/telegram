@@ -48,7 +48,7 @@ class ShopController extends Controller
     public function start()
     {
 
-        $get = $_GET['/shop/start'] ?? null;
+        $get = $_GET['shop/start'] ?? null;
 
         if ($get !== null) {
             $this->enable();
