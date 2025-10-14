@@ -50,7 +50,7 @@
 
 <div class="col-md-6 mb-4">
     <div class="card text-white bg-success">
-        <div class="card-header">Header</div>
+        <div class="card-header">Headerr</div>
         <div class="card-body">
             <h5 class="card-title">Webhook</h5>
             <a href="/shop/enable" class="btn btn-info">Yoqish</a>
