@@ -46,10 +46,8 @@ class ShopController extends Controller
 
     public function start()
     {
-
-//    $rs =   $this->telegram->setWebhook(['url'=>'https://0f2c496787d9.ngrok-free.app/shop/start']);
-//    var_dump($rs);
-//       die();
+        $this->enable();
+        $this->disable();
 
 
         $this->getDatas();
@@ -1172,7 +1170,29 @@ class ShopController extends Controller
         return isset($arr_data[$key]) ? $arr_data[$key] : null;
 
     }
+    
     //********* END DB FUNCTIONS
+
+    public function enable()
+    {
+        $url = 'https://2.nugaev.uz/shop/start';
+        $result = $this->telegram->setWebhook(['url' => $url]);
+        echo "<h3>Webhook yoqildi ✅</h3>";
+        echo "<pre>";
+        var_dump($result);
+        echo "</pre>";
+        
+    }
+
+    public function disable()
+    {
+        $result = $this->telegram->removeWebhook();
+        echo "<h3>Webhook o‘chirildi </h3>";
+        echo "<pre>";
+        var_dump($result);
+        echo "</pre>";
+        
+    }
 
 
 }
