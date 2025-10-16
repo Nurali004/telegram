@@ -45,10 +45,31 @@ class ShopController extends Controller
 
     }
 
+
+    public function toggleWebhook()
+    {
+        $checkUrl = "https://api.telegram.org/bot{$this->bot_token}/getWebhookInfo";
+        $info = json_decode(file_get_contents($checkUrl), true);
+
+        if (!empty($info['result']['url'])) {
+            $apiUrl = "https://api.telegram.org/bot{$this->bot_token}/deleteWebhook";
+            $status = "o‘chirildi";
+        } else {
+            $webHook = 'https://2.nugaev.uz/shop/start';
+            $apiUrl = "https://api.telegram.org/bot{$this->bot_token}/setWebhook?url={$webHook}";
+            $status = "yoqildi ✅";
+        }
+
+        $response = file_get_contents($apiUrl);
+        echo json_encode([
+            'telegram' => json_decode($response, true),
+            'status' => $status
+        ]);
+
+    }
+
     public function start()
     {
-
-
 
 
 
@@ -1200,6 +1221,8 @@ class ShopController extends Controller
         }
         
     }
+
+
 
 
 }
