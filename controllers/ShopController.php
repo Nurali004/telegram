@@ -49,18 +49,31 @@ class ShopController extends Controller
     public function toggleWebhook()
     {
         $checkUrl = "https://api.telegram.org/bot{$this->bot_token}/getWebhookInfo";
+
+        if (isset($_GET['check']) && $_GET['check'] === 'true') {
+            $info = json_decode(file_get_contents($checkUrl), true);
+            $hasUrl = !empty($info['result']['url']);
+            echo json_encode([
+                'status' => $hasUrl ? 'yoqilgan ✅' : 'o‘chirilgan'
+            ]);
+            return;
+        }
+
         $info = json_decode(file_get_contents($checkUrl), true);
 
         if (!empty($info['result']['url'])) {
+
             $apiUrl = "https://api.telegram.org/bot{$this->bot_token}/deleteWebhook";
-            $status = "o‘chirildi";
+            $status = "o‘chirilgan";
         } else {
+
             $webHook = 'https://2.nugaev.uz/shop/start';
             $apiUrl = "https://api.telegram.org/bot{$this->bot_token}/setWebhook?url={$webHook}";
-            $status = "yoqildi ✅";
+            $status = "yoqilgan ✅";
         }
 
         $response = file_get_contents($apiUrl);
+
         echo json_encode([
             'telegram' => json_decode($response, true),
             'status' => $status
@@ -1195,34 +1208,6 @@ class ShopController extends Controller
     }
     
     //********* END DB FUNCTIONS
-
-    public function enable()
-    {
-        $webHook = 'https://2.nugaev.uz/shop/start';
-        $apiUrl = "https://api.telegram.org/bot{$this->bot_token}/setWebhook?url={$webHook}";
-        $response = file_get_contents($apiUrl);
-        $result = json_decode($response, true);
-
-        echo "<pre>";
-        print_r($result);
-        echo "</pre>";
-
-        
-    }
-
-    public function disable()
-    {
-        $apiUrl = "https://api.telegram.org/bot{$this->bot_token}/deleteWebhook";
-        $response = file_get_contents($apiUrl);
-        $result = json_decode($response, true);
-
-        if (!empty($result['ok']) && $result['ok'] === true) {
-            echo "Webhook o‘chirildi";
-        }
-        
-    }
-
-
 
 
 }
